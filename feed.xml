@@ -176,9 +176,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -214,13 +214,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -282,13 +282,13 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
-      <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
-    
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
-    
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
+    
+      <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
     
       <category term="SQA" scheme="https://slim8020.github.io/tags/SQA/"/>
     
