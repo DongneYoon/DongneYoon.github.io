@@ -5,15 +5,20 @@
   
 
   
-  <title>아카이브: 2019/8 | Stand alone with development</title>
+  <title>Webpack 가이드 | Stand alone with development</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Stand alone with development">
-<meta property="og:url" content="https://slim8020.github.io/archives/2019/08/index.html">
+  <meta name="description" content="#웹팩이란 무엇인가? 웹팩은 모듈 번들러(Module Bundler)이다. #모듈이란 무엇인가? #웹팩은 왜 사용하는가? 여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을 해결 할 수 있다.웹사이트를 만들 때 HTML, CSS, JS, 이미지 등의 여러 파일이 만들어지는데, 파일을 모아주어 네트워크 성능을 향상 시킬 수 있다. #웹">
+<meta name="keywords" content="Webpack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Webpack 가이드">
+<meta property="og:url" content="https://slim8020.github.io/2021/04/17/Webpack_how_to_use/index.html">
 <meta property="og:site_name" content="Stand alone with development">
+<meta property="og:description" content="#웹팩이란 무엇인가? 웹팩은 모듈 번들러(Module Bundler)이다. #모듈이란 무엇인가? #웹팩은 왜 사용하는가? 여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을 해결 할 수 있다.웹사이트를 만들 때 HTML, CSS, JS, 이미지 등의 여러 파일이 만들어지는데, 파일을 모아주어 네트워크 성능을 향상 시킬 수 있다. #웹">
 <meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2021-04-20T09:00:39.358Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Stand alone with development">
+<meta name="twitter:title" content="Webpack 가이드">
+<meta name="twitter:description" content="#웹팩이란 무엇인가? 웹팩은 모듈 번들러(Module Bundler)이다. #모듈이란 무엇인가? #웹팩은 왜 사용하는가? 여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을 해결 할 수 있다.웹사이트를 만들 때 HTML, CSS, JS, 이미지 등의 여러 파일이 만들어지는데, 파일을 모아주어 네트워크 성능을 향상 시킬 수 있다. #웹">
   
     <link rel="alternate" href="/atom.xml" title="Stand alone with development" type="application/atom+xml">
   
@@ -64,116 +69,72 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/16/FirstXDPlugin/" class="archive-article-date">
-  <time datetime="2019-08-16T02:13:03.000Z" itemprop="datePublished">8월 16</time>
+        <section id="main"><article id="post-Webpack_how_to_use" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/17/Webpack_how_to_use/" class="article-date">
+  <time datetime="2021-04-17T02:13:03.000Z" itemprop="datePublished">2021-04-17</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Development/">Development</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/16/FirstXDPlugin/">Adobe XD 플러그인 개발 시작 하기</a>
+    <h1 class="article-title" itemprop="name">
+      Webpack 가이드
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/10/SoftwareTest_nonFunctional/" class="archive-article-date">
-  <time datetime="2019-08-10T14:13:03.000Z" itemprop="datePublished">8월 10</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/10/SoftwareTest_nonFunctional/">비기능 요구 테스트 (Non-Functional Test)</a>
-    </h1>
-  
+        <p>#웹팩이란 무엇인가?</p>
+<p>웹팩은 모듈 번들러(Module Bundler)이다.</p>
+<p>#모듈이란 무엇인가?</p>
+<p>#웹팩은 왜 사용하는가?</p>
+<p>여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을 해결 할 수 있다.<br>웹사이트를 만들 때 HTML, CSS, JS, 이미지 등의 여러 파일이 만들어지는데, 파일을 모아주어 네트워크 성능을 향상 시킬 수 있다.</p>
+<p>#웹팩 설치 및 환경 구성하는 방법</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/09/SoftwareTest_.ExploratoryTesting/" class="archive-article-date">
-  <time datetime="2019-08-09T14:13:03.000Z" itemprop="datePublished">8월 9</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/09/SoftwareTest_.ExploratoryTesting/">탐색적 테스트(Exploratory Test)</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/08/SoftwareTest_WhiteBox_BlackBox/" class="archive-article-date">
-  <time datetime="2019-08-08T14:13:03.000Z" itemprop="datePublished">8월 8</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://slim8020.github.io/2021/04/17/Webpack_how_to_use/" data-id="cknpwn84e000czkwt7nj4nxbd" class="article-share-link">공유</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/08/SoftwareTest_WhiteBox_BlackBox/">화이트박스 테스트와 블랙박스 테스트</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2019/08/07/SoftwareTest_TestCase/" class="archive-article-date">
-  <time datetime="2019-08-07T14:13:03.000Z" itemprop="datePublished">8월 7</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/07/SoftwareTest_TestCase/">테스트 케이스 만들기</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Webpack/">Webpack</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/04/20/NPM/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
+      <div class="article-nav-title">
+        
+          NPM 사용 가이드 총정리 (설치부터 삭제까지..)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2021/04/17/Hexo_how_to_use/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
+      <div class="article-nav-title">Hexo 개념 및 설치 / 배포 방법</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
