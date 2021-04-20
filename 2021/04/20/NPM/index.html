@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>NPM 사용 가이드 총정리 (설치부터 삭제까지..) | Stand alone with development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="NPM 은 무엇인가?NPM(Node Package Manager)은 Node 로 만들어진 패키지를 관리하는 도구이다.개발 시 필요한 컴포넌트, 프레임워크, 라이브러리 등등 여러 가지를 다운 받아서 개발하고자 하는 웹사이트에 반영할 수 있도록 제공하는 도구 이다.NPM 웹사이트(https://www.npmjs.com/)를 통해서 패키지를 검색하고 CLI (C">
+<meta name="keywords" content="NPM,NODE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NPM 사용 가이드 총정리 (설치부터 삭제까지..)">
+<meta property="og:url" content="https://slim8020.github.io/2021/04/20/NPM/index.html">
+<meta property="og:site_name" content="Stand alone with development">
+<meta property="og:description" content="NPM 은 무엇인가?NPM(Node Package Manager)은 Node 로 만들어진 패키지를 관리하는 도구이다.개발 시 필요한 컴포넌트, 프레임워크, 라이브러리 등등 여러 가지를 다운 받아서 개발하고자 하는 웹사이트에 반영할 수 있도록 제공하는 도구 이다.NPM 웹사이트(https://www.npmjs.com/)를 통해서 패키지를 검색하고 CLI (C">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/NPM.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/node.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_node.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/NPM_detail.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_search.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_search_detail.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_init.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_package_lock.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_install.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/NPM_before.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/NPM_after.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_list.png">
+<meta property="og:image" content="https://slim8020.github.io/img/AboutNPM/npm_uninstall.png">
+<meta property="og:updated_time" content="2021-04-20T08:48:27.220Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NPM 사용 가이드 총정리 (설치부터 삭제까지..)">
+<meta name="twitter:description" content="NPM 은 무엇인가?NPM(Node Package Manager)은 Node 로 만들어진 패키지를 관리하는 도구이다.개발 시 필요한 컴포넌트, 프레임워크, 라이브러리 등등 여러 가지를 다운 받아서 개발하고자 하는 웹사이트에 반영할 수 있도록 제공하는 도구 이다.NPM 웹사이트(https://www.npmjs.com/)를 통해서 패키지를 검색하고 CLI (C">
+<meta name="twitter:image" content="https://slim8020.github.io/img/AboutNPM/NPM.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Stand alone with development" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Stand alone with development</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">With the same mind as the first time...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="검색"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://slim8020.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-NPM" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/04/20/NPM/" class="article-date">
+  <time datetime="2021-04-20T07:22:44.000Z" itemprop="datePublished">2021-04-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Development/">Development</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      NPM 사용 가이드 총정리 (설치부터 삭제까지..)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="NPM-은-무엇인가"><a href="#NPM-은-무엇인가" class="headerlink" title="NPM 은 무엇인가?"></a>NPM 은 무엇인가?</h2><p>NPM(Node Package Manager)은 Node 로 만들어진 패키지를 관리하는 도구이다.<br>개발 시 필요한 컴포넌트, 프레임워크, 라이브러리 등등 여러 가지를 다운 받아서 개발하고자 하는 웹사이트에 반영할 수 있도록 제공하는 도구 이다.<br>NPM 웹사이트(<a href="https://www.npmjs.com/)를" target="_blank" rel="noopener">https://www.npmjs.com/)를</a> 통해서 패키지를 검색하고 CLI (Command-Line Interface) 를 통해 패키지를 다운로드 받고, 설치하고, 업데이트 할 수 있다. </p>
+<p><img src="/img/AboutNPM/NPM.png" alt="NPM 웹사이트"></p>
+<h2 id="NPM은-어떻게-설치-해야-하는가"><a href="#NPM은-어떻게-설치-해야-하는가" class="headerlink" title="NPM은 어떻게 설치 해야 하는가?"></a>NPM은 어떻게 설치 해야 하는가?</h2><p>NPM 은 Node.js (<a href="https://nodejs.org/)에" target="_blank" rel="noopener">https://nodejs.org/)에</a> 포함 되어 있다. 따라서 Node.js 를 설치하면 된다.</p>
+<p><img src="/img/AboutNPM/node.png" alt="Node 다운로드"></p>
+<p>어떤 버전의 Node 가 설치 되어 있는지 확인 하는 방법은 아래와 같다.</p>
+<pre><code>node -v
+</code></pre><p>어떤 버전의 NPM 이 설치 되어 있는지도 확인 할 수 있다.</p>
+<pre><code>npm -v
+</code></pre><p>결과<br><img src="/img/AboutNPM/npm_node.png" alt="NPM 버전"></p>
+<h2 id="NPM-Package"><a href="#NPM-Package" class="headerlink" title="NPM Package"></a>NPM Package</h2><p><img src="/img/AboutNPM/NPM_detail.png" alt="NPM Package"></p>
+<p>오른쪽에 얼마나 유명한지, 퀄리티는 어떤지, 유지보수는 잘 되는지를 표시 해 주고 있다.</p>
+<h2 id="NPM-Package-찾기"><a href="#NPM-Package-찾기" class="headerlink" title="NPM Package 찾기"></a>NPM Package 찾기</h2><p>npm 웹사이트에서 필요로 하는 패키지를 검색한다.</p>
+<p><img src="/img/AboutNPM/npm_search.png" alt="NPM search"></p>
+<p>Package 를 찾았으면 패키지의 자세한 정보(주간 다운로드 수, 버전, 라이센스, git 리포지토리, 패키지 사용방법 등)를 확인 할 수 있다. </p>
+<p><img src="/img/AboutNPM/npm_search_detail.png" alt="NPM search detail"></p>
+<h2 id="NPM-으로-개발-환경-만들기"><a href="#NPM-으로-개발-환경-만들기" class="headerlink" title="NPM 으로 개발 환경 만들기"></a>NPM 으로 개발 환경 만들기</h2><p>우선 개발환경을 꾸미고 싶은 폴더를 생성하고 해당 폴더에 진입한다.</p>
+<pre><code>mkdir npmtest
+cd npmtest
+</code></pre><p>아래 명령어를 입력한다.</p>
+<pre><code>npm init -y
+</code></pre><p>package.json 파일이 생성된다.</p>
+<p><img src="/img/AboutNPM/npm_init.png" alt="NPM init"></p>
+<p>하단에서 설명하겠지만 우선 Package 를 하나 설치 한다. (따라 해 보기)</p>
+<pre><code>npm install lodash
+</code></pre><p>package-lock.json 파일과 함께, node_modules 폴더가 생성된다.</p>
+<p><img src="/img/AboutNPM/npm_package_lock.png" alt="NPM init"></p>
+<p><span style="color:red"> package.json 과 package-lock.json 의 자세한 설명은 별도로.. </span></p>
+<h2 id="NPM-Package-설치-방법"><a href="#NPM-Package-설치-방법" class="headerlink" title="NPM Package 설치 방법"></a>NPM Package 설치 방법</h2><pre><code>npm install 패키지 이름
+</code></pre><p>예) npm install lodash</p>
+<p>결과)<br><img src="/img/AboutNPM/npm_install.png" alt="NPM install"></p>
+<p>옵션 -g 를 쓰면 해당 폴더만이 아닌 시스템 어디서든 패키지를 사용할 수 있다.</p>
+<h2 id="NPM-Pakcage-업데이트-하는-방법"><a href="#NPM-Pakcage-업데이트-하는-방법" class="headerlink" title="NPM Pakcage 업데이트 하는 방법"></a>NPM Pakcage 업데이트 하는 방법</h2><pre><code>npm update 패키지명
+</code></pre><p>예) npm update lodash</p>
+<p>설치된 패키지를 한꺼번에 업데이트 하려면?</p>
+<pre><code>npm update --save 
+</code></pre><p>업데이트가 됐는지 확인 해 보려면?</p>
+<pre><code>npm outdated
+</code></pre><p>업데이트 전<br><img src="/img/AboutNPM/NPM_before.png" alt="NPM outdated"></p>
+<p>업데이트 후<br><img src="/img/AboutNPM/NPM_after.png" alt="NPM outdated"></p>
+<h2 id="설치된-NPM-Package-를-알아보기"><a href="#설치된-NPM-Package-를-알아보기" class="headerlink" title="설치된 NPM Package 를 알아보기"></a>설치된 NPM Package 를 알아보기</h2><pre><code>npm list 
+</code></pre><p><img src="/img/AboutNPM/npm_list.png" alt="NPM list"></p>
+<p>패키지에 포함된 패키지들도 모두 나오므로 보기 힘들다.</p>
+<pre><code>npm list --depth=0
+</code></pre><p>최상단 패키지 이름만 나온다.</p>
+<h2 id="NPM-Package-삭제-하는-방법"><a href="#NPM-Package-삭제-하는-방법" class="headerlink" title="NPM Package 삭제 하는 방법"></a>NPM Package 삭제 하는 방법</h2><p>설치한 패키지 중에 더 이상 사용하지 않거나, 잘못 설치한 경우 삭제 할 수 있다.</p>
+<pre><code>npm uninstall 패키지명
+</code></pre><p>예) npm uninstall lodash</p>
+<p>결과)<br><img src="/img/AboutNPM/npm_uninstall.png" alt="NPM uninstall"></p>
+<p>패키지가 삭제 되었는지 list 를 사용하여 확인 할 수 있다.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="cknmuemgg0006v8wtfzvvif71" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NODE/">NODE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NPM/">NPM</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/16/FirstXDPlugin/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
+      <div class="article-nav-title">Adobe XD 플러그인 개발 시작 하기</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">카테고리</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Test/">Software Test</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">최근 포스트</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/20/NPM/">NPM 사용 가이드 총정리 (설치부터 삭제까지..)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/16/FirstXDPlugin/">Adobe XD 플러그인 개발 시작 하기</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/10/SoftwareTest_nonFunctional/">비기능 요구 테스트 (Non-Functional Test)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/09/SoftwareTest_.ExploratoryTesting/">탐색적 테스트(Exploratory Test)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/08/SoftwareTest_WhiteBox_BlackBox/">화이트박스 테스트와 블랙박스 테스트</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 윤뚠뚠<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
