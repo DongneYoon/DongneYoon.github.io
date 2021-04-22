@@ -44,78 +44,6 @@
   </entry>
   
   <entry>
-    <title>Webpack 가이드</title>
-    <link href="https://slim8020.github.io/2021/04/17/Webpack_how_to_use/"/>
-    <id>https://slim8020.github.io/2021/04/17/Webpack_how_to_use/</id>
-    <published>2021-04-17T02:13:03.000Z</published>
-    <updated>2021-04-20T09:00:39.358Z</updated>
-    
-    <content type="html"><![CDATA[<p>#웹팩이란 무엇인가?</p><p>웹팩은 모듈 번들러(Module Bundler)이다.</p><p>#모듈이란 무엇인가?</p><p>#웹팩은 왜 사용하는가?</p><p>여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을 해결 할 수 있다.<br>웹사이트를 만들 때 HTML, CSS, JS, 이미지 등의 여러 파일이 만들어지는데, 파일을 모아주어 네트워크 성능을 향상 시킬 수 있다.</p><p>#웹팩 설치 및 환경 구성하는 방법</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#웹팩이란 무엇인가?&lt;/p&gt;
-&lt;p&gt;웹팩은 모듈 번들러(Module Bundler)이다.&lt;/p&gt;
-&lt;p&gt;#모듈이란 무엇인가?&lt;/p&gt;
-&lt;p&gt;#웹팩은 왜 사용하는가?&lt;/p&gt;
-&lt;p&gt;여러 패키지를 사용하다보면 전역 변수들끼리 이름이 겹쳐서 충돌이 나는 것을
-      
-    
-    </summary>
-    
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
-    
-    
-      <category term="Webpack" scheme="https://slim8020.github.io/tags/Webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 개념 및 설치 / 배포 방법</title>
-    <link href="https://slim8020.github.io/2021/04/17/Hexo_how_to_use/"/>
-    <id>https://slim8020.github.io/2021/04/17/Hexo_how_to_use/</id>
-    <published>2021-04-16T23:13:03.000Z</published>
-    <updated>2021-04-20T09:00:39.356Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Hexo-란-무엇인가"><a href="#Hexo-란-무엇인가" class="headerlink" title="Hexo 란 무엇인가?"></a>Hexo 란 무엇인가?</h2><h2 id="어떻게-설치-해야-하는가"><a href="#어떻게-설치-해야-하는가" class="headerlink" title="어떻게 설치 해야 하는가?"></a>어떻게 설치 해야 하는가?</h2><h2 id="theme-설치-방법"><a href="#theme-설치-방법" class="headerlink" title="theme 설치 방법"></a>theme 설치 방법</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Hexo-란-무엇인가&quot;&gt;&lt;a href=&quot;#Hexo-란-무엇인가&quot; class=&quot;headerlink&quot; title=&quot;Hexo 란 무엇인가?&quot;&gt;&lt;/a&gt;Hexo 란 무엇인가?&lt;/h2&gt;&lt;h2 id=&quot;어떻게-설치-해야-하는가&quot;&gt;&lt;a href=&quot;#어떻
-      
-    
-    </summary>
-    
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
-    
-    
-      <category term="Hexo" scheme="https://slim8020.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 사용 가이드</title>
-    <link href="https://slim8020.github.io/2021/04/17/git_guide/"/>
-    <id>https://slim8020.github.io/2021/04/17/git_guide/</id>
-    <published>2021-04-16T23:13:03.000Z</published>
-    <updated>2021-04-20T09:00:39.359Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
-    
-    
-      <category term="git" scheme="https://slim8020.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Adobe XD 플러그인 개발 시작 하기</title>
     <link href="https://slim8020.github.io/2019/08/16/FirstXDPlugin/"/>
     <id>https://slim8020.github.io/2019/08/16/FirstXDPlugin/</id>
@@ -176,9 +104,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
-    
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -214,13 +142,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -282,13 +210,13 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
-      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
     
+      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
+    
       <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="SQA" scheme="https://slim8020.github.io/tags/SQA/"/>
     
