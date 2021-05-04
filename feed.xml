@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-04T07:22:26.092Z</updated>
+  <updated>2021-05-04T07:30:24.408Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -17,43 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>자주 쓰는 HTML 태그 정리</title>
-    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
-    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
-    <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-04T07:22:26.092Z</updated>
-    
-    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
-&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
-      
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
-    
-    
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
-      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
-    
-      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CSS 박스 모델의 속성 정리</title>
     <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
     <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
     <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-04T07:23:43.358Z</updated>
+    <updated>2021-05-04T07:30:24.408Z</updated>
     
     <content type="html"><![CDATA[<p>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>width</td><td>박스 모델의 너비를 지정</td><td>width: 100px</td></tr><tr><td>height</td><td>박스 모델의 높이를 지정</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>박스 모델의 크기를 게산하는 기준을 지정</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>박스 모델에 그림자 효과를 추가</td><td>box-shadow : 가로 세로 넓이 색상</td></tr></tbody></table><h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>border-style</td><td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td><td>border-style: solid</td></tr><tr><td>border-위치-style</td><td>선택한 위치의 테두리 스타일만 지정</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td><td>border-width: 10px</td></tr><tr><td>border-위치-width</td><td>선택한 위치의 테두리 두께만 지정</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td><td>border-color: #000</td></tr><tr><td>border-위치-color</td><td>선택한 위치의 테두리 색상만 지정</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td><td>border-radius: 10px</td></tr><tr><td>border-위치-radius</td><td>선택한 위치의 꼭지점만 둥글게 지정</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>margin</td><td>마진을 한꺼번에 지정</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-위치</td><td>정해진 위치(top,left,bottom,right)의 마진을 지정</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>패딩을 한꺼번에 지정</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-위치</td><td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>display</td><td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td><td>display : block</td></tr><tr><td>float</td><td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td><td>float : left</td></tr><tr><td>clear</td><td>float 속성 해제</td><td>clear : both</td></tr></tbody></table><h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td><td>left:10px</td></tr><tr><td>position</td><td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
     
@@ -70,13 +38,45 @@
       <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
     
     
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
     
       <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>자주 쓰는 HTML 태그 정리</title>
+    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
+    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
+    <published>2021-05-04T06:32:03.000Z</published>
+    <updated>2021-05-04T07:30:13.275Z</updated>
+    
+    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
+&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
+      
+    
+    </summary>
+    
+      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
+    
     
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
     
       <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
   </entry>
   
@@ -85,7 +85,7 @@
     <link href="https://slim8020.github.io/2021/04/23/web_publishing_memo/"/>
     <id>https://slim8020.github.io/2021/04/23/web_publishing_memo/</id>
     <published>2021-04-23T02:13:03.000Z</published>
-    <updated>2021-04-23T04:10:30.136Z</updated>
+    <updated>2021-05-04T07:32:37.982Z</updated>
     
     <content type="html"><![CDATA[<p>웹 퍼블리싱에서 중요하다고 생각 되는 몇가지를 정리한다. 이에 따라 수련하면 좋을 것 같다.</p><ol><li><p>속도 :</p><ul><li>개발 환경의 단축키 사용에 익숙해지는 것 &gt; vscode 단축키 연습</li><li>그때 그때 필요한 태그 및 스타일을 기억하고 있다가 바로 사용이 가능 할 것</li><li><p>스타일링의 기본 원리를 이해 하고 있는 것 ( 선택자, 스타일 우선순위 )</p><p>많이 만들어 보고 항상 시간을 측정하는 연습을 하면 좋을 것 같음.</p></li></ul></li><li><p>꼼꼼함 : </p><ul><li>충분한 테스트 (오타로 인한 버그를 찾는데 시간을 많이 보내게 된다.) &gt; style lint 를 이용하는게 좋을 것 같음.</li><li>분석 및 테스트 도구에 대한 사용법 숙지</li></ul></li><li><p>효율적인 코드:</p><ul><li>bundler 를 사용하여 파일의 최적화</li><li>minify 를 적용하여 코드 용량 줄이기</li><li>가독성이 떨어지지 않도록 클래스, ID 등의 네이밍 규칙 지정</li><li>스타일 가이드 페이지 작성</li><li>사전 sitemap 작성 </li></ul></li></ol>]]></content>
     
@@ -103,14 +103,14 @@
     
     </summary>
     
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
+      <category term="My Opinions" scheme="https://slim8020.github.io/categories/My-Opinions/"/>
     
     
-      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
     
   </entry>
   
@@ -119,7 +119,7 @@
     <link href="https://slim8020.github.io/2021/04/20/NPM/"/>
     <id>https://slim8020.github.io/2021/04/20/NPM/</id>
     <published>2021-04-20T07:22:44.000Z</published>
-    <updated>2021-04-20T09:01:20.606Z</updated>
+    <updated>2021-05-04T07:32:11.386Z</updated>
     
     <content type="html"><![CDATA[<h2 id="NPM-은-무엇인가"><a href="#NPM-은-무엇인가" class="headerlink" title="NPM 은 무엇인가?"></a>NPM 은 무엇인가?</h2><p>NPM(Node Package Manager)은 Node 로 만들어진 패키지를 관리하는 도구이다.<br>개발 시 필요한 컴포넌트, 프레임워크, 라이브러리 등등 여러 가지를 다운 받아서 개발하고자 하는 웹사이트에 반영할 수 있도록 제공하는 도구 이다.<br>NPM 웹사이트(<a href="https://www.npmjs.com/)를" target="_blank" rel="noopener">https://www.npmjs.com/)를</a> 통해서 패키지를 검색하고 CLI (Command-Line Interface) 를 통해 패키지를 다운로드 받고, 설치하고, 업데이트 할 수 있다. </p><p><img src="/img/AboutNPM/NPM.png" alt="NPM 웹사이트"></p><h2 id="NPM은-어떻게-설치-해야-하는가"><a href="#NPM은-어떻게-설치-해야-하는가" class="headerlink" title="NPM은 어떻게 설치 해야 하는가?"></a>NPM은 어떻게 설치 해야 하는가?</h2><p>NPM 은 Node.js (<a href="https://nodejs.org/)에" target="_blank" rel="noopener">https://nodejs.org/)에</a> 포함 되어 있다. 따라서 Node.js 를 설치하면 된다.</p><p><img src="/img/AboutNPM/node.png" alt="Node 다운로드"></p><p>어떤 버전의 Node 가 설치 되어 있는지 확인 하는 방법은 아래와 같다.</p><pre><code>node -v</code></pre><p>어떤 버전의 NPM 이 설치 되어 있는지도 확인 할 수 있다.</p><pre><code>npm -v</code></pre><p>결과<br><img src="/img/AboutNPM/npm_node.png" alt="NPM 버전"></p><h2 id="NPM-Package"><a href="#NPM-Package" class="headerlink" title="NPM Package"></a>NPM Package</h2><p><img src="/img/AboutNPM/NPM_detail.png" alt="NPM Package"></p><p>오른쪽에 얼마나 유명한지, 퀄리티는 어떤지, 유지보수는 잘 되는지를 표시 해 주고 있다.</p><h2 id="NPM-Package-찾기"><a href="#NPM-Package-찾기" class="headerlink" title="NPM Package 찾기"></a>NPM Package 찾기</h2><p>npm 웹사이트에서 필요로 하는 패키지를 검색한다.</p><p><img src="/img/AboutNPM/npm_search.png" alt="NPM search"></p><p>Package 를 찾았으면 패키지의 자세한 정보(주간 다운로드 수, 버전, 라이센스, git 리포지토리, 패키지 사용방법 등)를 확인 할 수 있다. </p><p><img src="/img/AboutNPM/npm_search_detail.png" alt="NPM search detail"></p><h2 id="NPM-으로-개발-환경-만들기"><a href="#NPM-으로-개발-환경-만들기" class="headerlink" title="NPM 으로 개발 환경 만들기"></a>NPM 으로 개발 환경 만들기</h2><p>우선 개발환경을 꾸미고 싶은 폴더를 생성하고 해당 폴더에 진입한다.</p><pre><code>mkdir npmtestcd npmtest</code></pre><p>아래 명령어를 입력한다.</p><pre><code>npm init -y</code></pre><p>package.json 파일이 생성된다.</p><p><img src="/img/AboutNPM/npm_init.png" alt="NPM init"></p><p>하단에서 설명하겠지만 우선 Package 를 하나 설치 한다. (따라 해 보기)</p><pre><code>npm install lodash</code></pre><p>package-lock.json 파일과 함께, node_modules 폴더가 생성된다.</p><p><img src="/img/AboutNPM/npm_package_lock.png" alt="NPM init"></p><p><span style="color:red"> package.json 과 package-lock.json 의 자세한 설명은 별도로.. </span></p><h2 id="NPM-Package-설치-방법"><a href="#NPM-Package-설치-방법" class="headerlink" title="NPM Package 설치 방법"></a>NPM Package 설치 방법</h2><pre><code>npm install 패키지 이름</code></pre><p>예) npm install lodash</p><p>결과)<br><img src="/img/AboutNPM/npm_install.png" alt="NPM install"></p><p>옵션 -g 를 쓰면 해당 폴더만이 아닌 시스템 어디서든 패키지를 사용할 수 있다.</p><h2 id="NPM-Pakcage-업데이트-하는-방법"><a href="#NPM-Pakcage-업데이트-하는-방법" class="headerlink" title="NPM Pakcage 업데이트 하는 방법"></a>NPM Pakcage 업데이트 하는 방법</h2><pre><code>npm update 패키지명</code></pre><p>예) npm update lodash</p><p>설치된 패키지를 한꺼번에 업데이트 하려면?</p><pre><code>npm update --save </code></pre><p>업데이트가 됐는지 확인 해 보려면?</p><pre><code>npm outdated</code></pre><p>업데이트 전<br><img src="/img/AboutNPM/NPM_before.png" alt="NPM outdated"></p><p>업데이트 후<br><img src="/img/AboutNPM/NPM_after.png" alt="NPM outdated"></p><h2 id="설치된-NPM-Package-를-알아보기"><a href="#설치된-NPM-Package-를-알아보기" class="headerlink" title="설치된 NPM Package 를 알아보기"></a>설치된 NPM Package 를 알아보기</h2><pre><code>npm list </code></pre><p><img src="/img/AboutNPM/npm_list.png" alt="NPM list"></p><p>패키지에 포함된 패키지들도 모두 나오므로 보기 힘들다.</p><pre><code>npm list --depth=0</code></pre><p>최상단 패키지 이름만 나온다.</p><h2 id="NPM-Package-삭제-하는-방법"><a href="#NPM-Package-삭제-하는-방법" class="headerlink" title="NPM Package 삭제 하는 방법"></a>NPM Package 삭제 하는 방법</h2><p>설치한 패키지 중에 더 이상 사용하지 않거나, 잘못 설치한 경우 삭제 할 수 있다.</p><pre><code>npm uninstall 패키지명</code></pre><p>예) npm uninstall lodash</p><p>결과)<br><img src="/img/AboutNPM/npm_uninstall.png" alt="NPM uninstall"></p><p>패키지가 삭제 되었는지 list 를 사용하여 확인 할 수 있다.</p>]]></content>
     
@@ -132,7 +132,7 @@
     
     </summary>
     
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
+      <category term="Develop Environment" scheme="https://slim8020.github.io/categories/Develop-Environment/"/>
     
     
       <category term="NPM" scheme="https://slim8020.github.io/tags/NPM/"/>
@@ -146,7 +146,7 @@
     <link href="https://slim8020.github.io/2019/08/16/FirstXDPlugin/"/>
     <id>https://slim8020.github.io/2019/08/16/FirstXDPlugin/</id>
     <published>2019-08-16T02:13:03.000Z</published>
-    <updated>2021-04-17T00:30:54.401Z</updated>
+    <updated>2021-05-04T07:31:11.351Z</updated>
     
     <content type="html"><![CDATA[<h1 id="전제-조건"><a href="#전제-조건" class="headerlink" title="전제 조건"></a>전제 조건</h1><p>아래와 같은 버전을 기준으로 XD 플러그인 개발 방법을 설명한다.</p><ul><li>개발환경 : Adob XD 22.0</li></ul><p>Adobe XD 플러그인을 개발하기 위해서는 기본적으로 HTML, CSS, Javascript 에 대한 기본 지식이 필요하다.</p><h1 id="Adobe-계정-생성"><a href="#Adobe-계정-생성" class="headerlink" title="Adobe 계정 생성"></a>Adobe 계정 생성</h1><p>Adobe 에 가입하고 계정을 만든다.</p><h1 id="플러그인-생성"><a href="#플러그인-생성" class="headerlink" title="플러그인 생성"></a>플러그인 생성</h1><ol><li>해당 경로 (<a href="https://console.adobe.io/plugins" target="_blank" rel="noopener">https://console.adobe.io/plugins</a>) 에 접속한다.</li><li>Create Plugin 을 클릭한다. </li><li>스타터 플러그인이 생성 되면 다운로드 받는다.</li></ol><h1 id="플러그인-개발-버전-설치"><a href="#플러그인-개발-버전-설치" class="headerlink" title="플러그인 개발 버전 설치"></a>플러그인 개발 버전 설치</h1><p>다운받은 스타터 플러그인으로 XD에 설치하여 바로 확인해 볼 수 있다.<br>스타터 플러그인을 설치하면 Hello 라는 플러그인 항목과 함께 실행 시키면 보라색 사각형이 그려진다.</p><p><img src="/img/FirstXDPlugin/adobeXDDevelopFolder.png" alt="개발 폴더 표시"></p><p>설치 방법은 플러그인 &gt; 개발 &gt; 개발 폴더 표시 후에, 다운로드 받은 파일의 압축을 해당 폴더에 풀어 놓으면 된다.<br>그리고 플러그인 리로드를 수행한다.</p><h1 id="플러그인-리로드"><a href="#플러그인-리로드" class="headerlink" title="플러그인 리로드"></a>플러그인 리로드</h1><p>플러그인을 수정 후에는 리로드를 수행 하여 변경 사항을 반영 해야 한다.<br><img src="/img/FirstXDPlugin/adobeXDReload.PNG" alt="플러그인 리로드"></p><h1 id="디버깅"><a href="#디버깅" class="headerlink" title="디버깅"></a>디버깅</h1><p>Adobe XD 에서 기본적으로 제공하는 디버깅 방법은 콘솔로 로그를 표시하는 방식이다.<br>js 파일에 아래와 같이 코드를 추가하면 코드 상에서 필요한 지점의 결과 값을 콘솔로 볼 수 있다.</p><p align="center"><br><font color="#1f1f1f"><b>console.log(“Say Hello!”);</b></font><br></p><p><img src="/img/FirstXDPlugin/DevelopConsole.png" alt="개발자 콘솔"></p><h1 id="폴더-구조"><a href="#폴더-구조" class="headerlink" title="폴더 구조"></a>폴더 구조</h1><ul><li>main.js : 동작에 대한 로직 구현</li><li>manifest.json : 플러그인의 이름, 메뉴 구조를 설정</li></ul><p>출처 : <a href="https://adobexdplatform.com/plugin-docs/tutorials/quick-start/" target="_blank" rel="noopener">https://adobexdplatform.com/plugin-docs/tutorials/quick-start/</a></p>]]></content>
     
@@ -161,7 +161,7 @@
     
     </summary>
     
-      <category term="Development" scheme="https://slim8020.github.io/categories/Development/"/>
+      <category term="Adobe XD Plugin" scheme="https://slim8020.github.io/categories/Adobe-XD-Plugin/"/>
     
     
       <category term="AdobeXD" scheme="https://slim8020.github.io/tags/AdobeXD/"/>
@@ -202,9 +202,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
-    
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -240,13 +240,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -308,13 +308,13 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
-      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
     
+      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
+    
       <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="SQA" scheme="https://slim8020.github.io/tags/SQA/"/>
     

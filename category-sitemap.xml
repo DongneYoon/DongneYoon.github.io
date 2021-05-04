@@ -8,22 +8,36 @@
     </url>
 
     <url>
+        <loc>https://slim8020.github.io/categories/My-Opinions/</loc>
+        <lastmod>2021-05-04T07:32:37.982Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/categories/Develop-Environment/</loc>
+        <lastmod>2021-05-04T07:32:11.386Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/categories/Adobe-XD-Plugin/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/categories/CSS/</loc>
-        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
+        <lastmod>2021-05-04T07:30:24.408Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/categories/HTML/</loc>
-        <lastmod>2021-05-04T07:22:26.092Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/categories/Development/</loc>
-        <lastmod>2021-04-23T04:10:30.136Z</lastmod>
+        <lastmod>2021-05-04T07:30:13.275Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

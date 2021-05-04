@@ -3,50 +3,92 @@
 
 
     <url>
-        <loc>https://slim8020.github.io/tags/web/</loc>
-        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/publishing/</loc>
-        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/css/</loc>
-        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
+        <loc>https://slim8020.github.io/tags/webpublishing/</loc>
+        <lastmod>2021-05-04T07:32:37.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/html/</loc>
-        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
+        <lastmod>2021-05-04T07:32:37.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/webpublishing/</loc>
-        <lastmod>2021-04-23T04:10:30.136Z</lastmod>
+        <loc>https://slim8020.github.io/tags/css/</loc>
+        <lastmod>2021-05-04T07:32:37.982Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/NODE/</loc>
-        <lastmod>2021-04-20T09:01:20.606Z</lastmod>
+        <lastmod>2021-05-04T07:32:11.386Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/NPM/</loc>
-        <lastmod>2021-04-20T09:01:20.606Z</lastmod>
+        <lastmod>2021-05-04T07:32:11.386Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/%EA%B0%9C%EB%B0%9C/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/%EC%96%B4%EB%8F%84%EB%B9%84XD/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/Development/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/Plugin/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/AdobeXD/</loc>
+        <lastmod>2021-05-04T07:31:11.351Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/web/</loc>
+        <lastmod>2021-05-04T07:30:24.408Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/publishing/</loc>
+        <lastmod>2021-05-04T07:30:24.408Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -145,48 +187,6 @@
     <url>
         <loc>https://slim8020.github.io/tags/Test/</loc>
         <lastmod>2021-04-17T00:30:56.344Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/%EA%B0%9C%EB%B0%9C/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/%EC%96%B4%EB%8F%84%EB%B9%84XD/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/Development/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/Plugin/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/AdobeXD/</loc>
-        <lastmod>2021-04-17T00:30:54.401Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
