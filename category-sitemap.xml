@@ -8,8 +8,22 @@
     </url>
 
     <url>
+        <loc>https://slim8020.github.io/categories/CSS/</loc>
+        <lastmod>2021-05-04T07:23:43.358Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/categories/HTML/</loc>
+        <lastmod>2021-05-04T07:22:26.092Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/categories/Development/</loc>
-        <lastmod>2021-04-20T09:01:20.606Z</lastmod>
+        <lastmod>2021-04-23T04:10:30.136Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

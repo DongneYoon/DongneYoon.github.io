@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>CSS 박스 모델의 속성 정리 | Stand alone with development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다.  박스 모델 속성   속성 설명 예시     width 박스 모델의 너비를 지정 width: 100px   height 박스 모델의 높이를 지정 height: 100px   box-sizing 박스 모델의 크기를 게산하는 기준을 지정 box-sizing : border">
+<meta name="keywords" content="html,css,publishing,web">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS 박스 모델의 속성 정리">
+<meta property="og:url" content="https://slim8020.github.io/2021/05/04/css_boxmodel/index.html">
+<meta property="og:site_name" content="Stand alone with development">
+<meta property="og:description" content="대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다.  박스 모델 속성   속성 설명 예시     width 박스 모델의 너비를 지정 width: 100px   height 박스 모델의 높이를 지정 height: 100px   box-sizing 박스 모델의 크기를 게산하는 기준을 지정 box-sizing : border">
+<meta property="og:locale" content="ko">
+<meta property="og:updated_time" content="2021-05-04T07:23:43.358Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS 박스 모델의 속성 정리">
+<meta name="twitter:description" content="대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다.  박스 모델 속성   속성 설명 예시     width 박스 모델의 너비를 지정 width: 100px   height 박스 모델의 높이를 지정 height: 100px   box-sizing 박스 모델의 크기를 게산하는 기준을 지정 box-sizing : border">
+  
+    <link rel="alternate" href="/atom.xml" title="Stand alone with development" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Stand alone with development</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">With the same mind as the first time...</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="검색"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://slim8020.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css_boxmodel" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/04/css_boxmodel/" class="article-date">
+  <time datetime="2021-05-04T06:32:03.000Z" itemprop="datePublished">2021-05-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS 박스 모델의 속성 정리
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p>
+<h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>박스 모델의 너비를 지정</td>
+<td>width: 100px</td>
+</tr>
+<tr>
+<td>height</td>
+<td>박스 모델의 높이를 지정</td>
+<td>height: 100px</td>
+</tr>
+<tr>
+<td>box-sizing</td>
+<td>박스 모델의 크기를 게산하는 기준을 지정</td>
+<td>box-sizing : border-box / box-sizing : content-box</td>
+</tr>
+<tr>
+<td>box-shadow</td>
+<td>박스 모델에 그림자 효과를 추가</td>
+<td>box-shadow : 가로 세로 넓이 색상</td>
+</tr>
+</tbody>
+</table>
+<h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>border-style</td>
+<td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td>
+<td>border-style: solid</td>
+</tr>
+<tr>
+<td>border-위치-style</td>
+<td>선택한 위치의 테두리 스타일만 지정</td>
+<td>border-top-style: solid</td>
+</tr>
+<tr>
+<td>border-width</td>
+<td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td>
+<td>border-width: 10px</td>
+</tr>
+<tr>
+<td>border-위치-width</td>
+<td>선택한 위치의 테두리 두께만 지정</td>
+<td>border-top-width: 10px</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td>
+<td>border-color: #000</td>
+</tr>
+<tr>
+<td>border-위치-color</td>
+<td>선택한 위치의 테두리 색상만 지정</td>
+<td>border-top-color: #f00</td>
+</tr>
+<tr>
+<td>border-radius</td>
+<td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td>
+<td>border-radius: 10px</td>
+</tr>
+<tr>
+<td>border-위치-radius</td>
+<td>선택한 위치의 꼭지점만 둥글게 지정</td>
+<td>border-top=left-radius: 10px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>margin</td>
+<td>마진을 한꺼번에 지정</td>
+<td>margin: 10px 10px 5px 5px</td>
+</tr>
+<tr>
+<td>margin-위치</td>
+<td>정해진 위치(top,left,bottom,right)의 마진을 지정</td>
+<td>margin-top: 10px</td>
+</tr>
+<tr>
+<td>padding</td>
+<td>패딩을 한꺼번에 지정</td>
+<td>padding: 10px 10px 5px 5px</td>
+</tr>
+<tr>
+<td>padding-위치</td>
+<td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td>
+<td>padding-top: 10px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td>
+<td>display : block</td>
+</tr>
+<tr>
+<td>float</td>
+<td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td>
+<td>float : left</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>float 속성 해제</td>
+<td>clear : both</td>
+</tr>
+</tbody>
+</table>
+<h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left, right, top, bottom</td>
+<td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td>
+<td>left:10px</td>
+</tr>
+<tr>
+<td>position</td>
+<td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td>
+<td>position: relative</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="cko9ovxpu000n50wt6xxzj7n0" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/05/04/html_tag/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">최신</strong>
+      <div class="article-nav-title">
+        
+          자주 쓰는 HTML 태그 정리
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/04/23/web_publishing_memo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">이전</strong>
+      <div class="article-nav-title">웹 퍼블리싱에서 중요하다고 생각 되는 것</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">카테고리</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Development/">Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Test/">Software Test</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">최근 포스트</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/04/html_tag/">자주 쓰는 HTML 태그 정리</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/04/css_boxmodel/">CSS 박스 모델의 속성 정리</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/23/web_publishing_memo/">웹 퍼블리싱에서 중요하다고 생각 되는 것</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/20/NPM/">NPM 사용 가이드 총정리 (설치부터 삭제까지..)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/16/FirstXDPlugin/">Adobe XD 플러그인 개발 시작 하기</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2021 윤뚠뚠<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
