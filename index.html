@@ -3,6 +3,19 @@
 <head>
   <meta charset="utf-8">
   
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-145384176-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
 
   
   <title>Stand alone with development</title>
@@ -65,209 +78,6 @@
 </header>
       <div class="outer">
         <section id="main">
-  
-    <article id="post-css_boxmodel" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/05/04/css_boxmodel/" class="article-date">
-  <time datetime="2021-05-04T06:32:03.000Z" itemprop="datePublished">2021-05-04</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/CSS/">CSS</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/css_boxmodel/">CSS 박스 모델의 속성 정리</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p>
-<h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table>
-<thead>
-<tr>
-<th>속성</th>
-<th>설명</th>
-<th>예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>width</td>
-<td>박스 모델의 너비를 지정</td>
-<td>width: 100px</td>
-</tr>
-<tr>
-<td>height</td>
-<td>박스 모델의 높이를 지정</td>
-<td>height: 100px</td>
-</tr>
-<tr>
-<td>box-sizing</td>
-<td>박스 모델의 크기를 게산하는 기준을 지정</td>
-<td>box-sizing : border-box / box-sizing : content-box</td>
-</tr>
-<tr>
-<td>box-shadow</td>
-<td>박스 모델에 그림자 효과를 추가</td>
-<td>box-shadow : 가로 세로 넓이 색상</td>
-</tr>
-</tbody>
-</table>
-<h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table>
-<thead>
-<tr>
-<th>속성</th>
-<th>설명</th>
-<th>예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>border-style</td>
-<td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td>
-<td>border-style: solid</td>
-</tr>
-<tr>
-<td>border-위치-style</td>
-<td>선택한 위치의 테두리 스타일만 지정</td>
-<td>border-top-style: solid</td>
-</tr>
-<tr>
-<td>border-width</td>
-<td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td>
-<td>border-width: 10px</td>
-</tr>
-<tr>
-<td>border-위치-width</td>
-<td>선택한 위치의 테두리 두께만 지정</td>
-<td>border-top-width: 10px</td>
-</tr>
-<tr>
-<td>border-color</td>
-<td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td>
-<td>border-color: #000</td>
-</tr>
-<tr>
-<td>border-위치-color</td>
-<td>선택한 위치의 테두리 색상만 지정</td>
-<td>border-top-color: #f00</td>
-</tr>
-<tr>
-<td>border-radius</td>
-<td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td>
-<td>border-radius: 10px</td>
-</tr>
-<tr>
-<td>border-위치-radius</td>
-<td>선택한 위치의 꼭지점만 둥글게 지정</td>
-<td>border-top=left-radius: 10px</td>
-</tr>
-</tbody>
-</table>
-<h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table>
-<thead>
-<tr>
-<th>속성</th>
-<th>설명</th>
-<th>예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>margin</td>
-<td>마진을 한꺼번에 지정</td>
-<td>margin: 10px 10px 5px 5px</td>
-</tr>
-<tr>
-<td>margin-위치</td>
-<td>정해진 위치(top,left,bottom,right)의 마진을 지정</td>
-<td>margin-top: 10px</td>
-</tr>
-<tr>
-<td>padding</td>
-<td>패딩을 한꺼번에 지정</td>
-<td>padding: 10px 10px 5px 5px</td>
-</tr>
-<tr>
-<td>padding-위치</td>
-<td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td>
-<td>padding-top: 10px</td>
-</tr>
-</tbody>
-</table>
-<h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table>
-<thead>
-<tr>
-<th>속성</th>
-<th>설명</th>
-<th>예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>display</td>
-<td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td>
-<td>display : block</td>
-</tr>
-<tr>
-<td>float</td>
-<td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td>
-<td>float : left</td>
-</tr>
-<tr>
-<td>clear</td>
-<td>float 속성 해제</td>
-<td>clear : both</td>
-</tr>
-</tbody>
-</table>
-<h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table>
-<thead>
-<tr>
-<th>속성</th>
-<th>설명</th>
-<th>예시</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>left, right, top, bottom</td>
-<td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td>
-<td>left:10px</td>
-</tr>
-<tr>
-<td>position</td>
-<td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td>
-<td>position: relative</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="cko9q1h1d000au4wtgaizamav" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
   
     <article id="post-html_tag" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -468,11 +278,304 @@
 </tr>
 </tbody>
 </table>
+<h2 id="폼에서-사용하는-태그"><a href="#폼에서-사용하는-태그" class="headerlink" title="폼에서 사용하는 태그"></a>폼에서 사용하는 태그</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;object&gt;</td>
+<td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;embed&gt;</td>
+<td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;img&gt;</td>
+<td>이미지 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;audio&gt;</td>
+<td>오디오 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;video&gt;</td>
+<td>비디오 파일 삽입)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lt-input-gt-태그의-타입"><a href="#lt-input-gt-태그의-타입" class="headerlink" title="&lt;input&gt; 태그의 타입"></a>&lt;input&gt; 태그의 타입</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;object&gt;</td>
+<td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;embed&gt;</td>
+<td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;img&gt;</td>
+<td>이미지 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;audio&gt;</td>
+<td>오디오 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;video&gt;</td>
+<td>비디오 파일 삽입)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lt-input-gt-태그의-속성"><a href="#lt-input-gt-태그의-속성" class="headerlink" title="&lt;input&gt; 태그의 속성"></a>&lt;input&gt; 태그의 속성</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&lt;object&gt;</td>
+<td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;embed&gt;</td>
+<td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;img&gt;</td>
+<td>이미지 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;audio&gt;</td>
+<td>오디오 파일 삽입</td>
+</tr>
+<tr>
+<td>&lt;video&gt;</td>
+<td>비디오 파일 삽입)</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="cko9q1h1h000fu4wt9gmuqk7k" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="cko9q72o5000d9cwtndnaf2vc" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-css_boxmodel" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/04/css_boxmodel/" class="article-date">
+  <time datetime="2021-05-04T06:32:03.000Z" itemprop="datePublished">2021-05-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/CSS/">CSS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/04/css_boxmodel/">CSS 박스 모델의 속성 정리</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p>
+<h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>박스 모델의 너비를 지정</td>
+<td>width: 100px</td>
+</tr>
+<tr>
+<td>height</td>
+<td>박스 모델의 높이를 지정</td>
+<td>height: 100px</td>
+</tr>
+<tr>
+<td>box-sizing</td>
+<td>박스 모델의 크기를 게산하는 기준을 지정</td>
+<td>box-sizing : border-box / box-sizing : content-box</td>
+</tr>
+<tr>
+<td>box-shadow</td>
+<td>박스 모델에 그림자 효과를 추가</td>
+<td>box-shadow : 가로 세로 넓이 색상</td>
+</tr>
+</tbody>
+</table>
+<h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>border-style</td>
+<td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td>
+<td>border-style: solid</td>
+</tr>
+<tr>
+<td>border-위치-style</td>
+<td>선택한 위치의 테두리 스타일만 지정</td>
+<td>border-top-style: solid</td>
+</tr>
+<tr>
+<td>border-width</td>
+<td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td>
+<td>border-width: 10px</td>
+</tr>
+<tr>
+<td>border-위치-width</td>
+<td>선택한 위치의 테두리 두께만 지정</td>
+<td>border-top-width: 10px</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td>
+<td>border-color: #000</td>
+</tr>
+<tr>
+<td>border-위치-color</td>
+<td>선택한 위치의 테두리 색상만 지정</td>
+<td>border-top-color: #f00</td>
+</tr>
+<tr>
+<td>border-radius</td>
+<td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td>
+<td>border-radius: 10px</td>
+</tr>
+<tr>
+<td>border-위치-radius</td>
+<td>선택한 위치의 꼭지점만 둥글게 지정</td>
+<td>border-top=left-radius: 10px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>margin</td>
+<td>마진을 한꺼번에 지정</td>
+<td>margin: 10px 10px 5px 5px</td>
+</tr>
+<tr>
+<td>margin-위치</td>
+<td>정해진 위치(top,left,bottom,right)의 마진을 지정</td>
+<td>margin-top: 10px</td>
+</tr>
+<tr>
+<td>padding</td>
+<td>패딩을 한꺼번에 지정</td>
+<td>padding: 10px 10px 5px 5px</td>
+</tr>
+<tr>
+<td>padding-위치</td>
+<td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td>
+<td>padding-top: 10px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td>
+<td>display : block</td>
+</tr>
+<tr>
+<td>float</td>
+<td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td>
+<td>float : left</td>
+</tr>
+<tr>
+<td>clear</td>
+<td>float 속성 해제</td>
+<td>clear : both</td>
+</tr>
+</tbody>
+</table>
+<h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left, right, top, bottom</td>
+<td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td>
+<td>left:10px</td>
+</tr>
+<tr>
+<td>position</td>
+<td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td>
+<td>position: relative</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="cko9q72o9000i9cwtnmgfqh6w" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -541,7 +644,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="cko9q1h2q002vu4wtmrzvx6om" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="cko9q72o3000c9cwt7lhztizy" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpublishing/">webpublishing</a></li></ul>
@@ -632,7 +735,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="cko9q1h130002u4wt8ingjfu7" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="cko9q72nt00039cwth0439d3d" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NODE/">NODE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NPM/">NPM</a></li></ul>
@@ -698,7 +801,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="cko9q1h0z0001u4wtiwkebsdp" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="cko9q72no00019cwtwihvcykv" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AdobeXD/">AdobeXD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Development/">Development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Plugin/">Plugin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/개발/">개발</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/어도비XD/">어도비XD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/플러그인/">플러그인</a></li></ul>
@@ -773,7 +876,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="cko9q1h1f000bu4wtanaj54yq" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="cko9q72nz00089cwtsuer5meb" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NonFunctional/">NonFunctional</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PerformanceTest/">PerformanceTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/비기능테스트/">비기능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/성능테스트/">성능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li></ul>
@@ -841,7 +944,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/" data-id="cko9q1h1b0007u4wt9uitge35" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/" data-id="cko9q72ny00079cwtnieug0m0" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/탐색적테스트/">탐색적테스트</a></li></ul>
@@ -925,7 +1028,7 @@ else
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/" data-id="cko9q1h1a0006u4wtdrain1lv" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/" data-id="cko9q72o8000h9cwtgwf6smot" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BlackBox/">BlackBox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WhiteBox/">WhiteBox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/블랙박스테스트/">블랙박스테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/화이트박스테스트/">화이트박스테스트</a></li></ul>
@@ -983,7 +1086,7 @@ else
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/07/SoftwareTest_TestCase/" data-id="cko9q1h180005u4wte4vak277" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/07/SoftwareTest_TestCase/" data-id="cko9q72o000099cwtzw4zlvg3" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SQA/">SQA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TestCase/">TestCase</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/테스트케이스/">테스트케이스</a></li></ul>
@@ -1018,11 +1121,11 @@ else
       <ul>
         
           <li>
-            <a href="/2021/05/04/css_boxmodel/">CSS 박스 모델의 속성 정리</a>
+            <a href="/2021/05/04/html_tag/">자주 쓰는 HTML 태그 정리</a>
           </li>
         
           <li>
-            <a href="/2021/05/04/html_tag/">자주 쓰는 HTML 태그 정리</a>
+            <a href="/2021/05/04/css_boxmodel/">CSS 박스 모델의 속성 정리</a>
           </li>
         
           <li>
@@ -1049,7 +1152,7 @@ else
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2021 윤뚠뚠<br>
+      &copy; 2021 동네개발자<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>

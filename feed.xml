@@ -6,15 +6,47 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-04T07:35:46.594Z</updated>
+  <updated>2021-05-04T07:44:04.505Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
-    <name>윤뚠뚠</name>
+    <name>동네개발자</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>자주 쓰는 HTML 태그 정리</title>
+    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
+    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
+    <published>2021-05-04T06:32:03.000Z</published>
+    <updated>2021-05-04T07:44:04.505Z</updated>
+    
+    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="폼에서-사용하는-태그"><a href="#폼에서-사용하는-태그" class="headerlink" title="폼에서 사용하는 태그"></a>폼에서 사용하는 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="lt-input-gt-태그의-타입"><a href="#lt-input-gt-태그의-타입" class="headerlink" title="&lt;input&gt; 태그의 타입"></a>&lt;input&gt; 태그의 타입</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="lt-input-gt-태그의-속성"><a href="#lt-input-gt-태그의-속성" class="headerlink" title="&lt;input&gt; 태그의 속성"></a>&lt;input&gt; 태그의 속성</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
+&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
+      
+    
+    </summary>
+    
+      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
+    
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS 박스 모델의 속성 정리</title>
@@ -38,45 +70,13 @@
       <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
     
     
-      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
-    
-      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
-  </entry>
-  
-  <entry>
-    <title>자주 쓰는 HTML 태그 정리</title>
-    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
-    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
-    <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-04T07:37:04.834Z</updated>
-    
-    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
-&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
-      
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
-    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
     
       <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
   </entry>
   
@@ -106,11 +106,11 @@
       <category term="My Opinions" scheme="https://slim8020.github.io/categories/My-Opinions/"/>
     
     
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
-      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
   </entry>
   
@@ -202,9 +202,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -240,13 +240,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -308,13 +308,13 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
-      <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
-    
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
-    
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="TestCase" scheme="https://slim8020.github.io/tags/TestCase/"/>
+    
+      <category term="테스트케이스" scheme="https://slim8020.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BC%80%EC%9D%B4%EC%8A%A4/"/>
     
       <category term="SQA" scheme="https://slim8020.github.io/tags/SQA/"/>
     

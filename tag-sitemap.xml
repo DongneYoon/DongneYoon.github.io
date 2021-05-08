@@ -3,21 +3,35 @@
 
 
     <url>
-        <loc>https://slim8020.github.io/tags/webpublishing/</loc>
-        <lastmod>2021-05-04T07:39:30.211Z</lastmod>
+        <loc>https://slim8020.github.io/tags/web/</loc>
+        <lastmod>2021-05-04T07:44:04.505Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/html/</loc>
-        <lastmod>2021-05-04T07:39:30.211Z</lastmod>
+        <loc>https://slim8020.github.io/tags/publishing/</loc>
+        <lastmod>2021-05-04T07:44:04.505Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/css/</loc>
+        <lastmod>2021-05-04T07:44:04.505Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/html/</loc>
+        <lastmod>2021-05-04T07:44:04.505Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/webpublishing/</loc>
         <lastmod>2021-05-04T07:39:30.211Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -145,20 +159,6 @@
     <url>
         <loc>https://slim8020.github.io/tags/NPM/</loc>
         <lastmod>2021-05-04T07:37:18.513Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/web/</loc>
-        <lastmod>2021-05-04T07:37:04.834Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/publishing/</loc>
-        <lastmod>2021-05-04T07:37:04.834Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
