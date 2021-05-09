@@ -38,13 +38,13 @@
       <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
     
     
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
     
       <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
   </entry>
   
@@ -53,16 +53,16 @@
     <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
     <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
     <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-04T07:35:46.594Z</updated>
+    <updated>2021-05-09T06:32:43.310Z</updated>
     
-    <content type="html"><![CDATA[<p>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>width</td><td>박스 모델의 너비를 지정</td><td>width: 100px</td></tr><tr><td>height</td><td>박스 모델의 높이를 지정</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>박스 모델의 크기를 게산하는 기준을 지정</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>박스 모델에 그림자 효과를 추가</td><td>box-shadow : 가로 세로 넓이 색상</td></tr></tbody></table><h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>border-style</td><td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td><td>border-style: solid</td></tr><tr><td>border-위치-style</td><td>선택한 위치의 테두리 스타일만 지정</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td><td>border-width: 10px</td></tr><tr><td>border-위치-width</td><td>선택한 위치의 테두리 두께만 지정</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td><td>border-color: #000</td></tr><tr><td>border-위치-color</td><td>선택한 위치의 테두리 색상만 지정</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td><td>border-radius: 10px</td></tr><tr><td>border-위치-radius</td><td>선택한 위치의 꼭지점만 둥글게 지정</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>margin</td><td>마진을 한꺼번에 지정</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-위치</td><td>정해진 위치(top,left,bottom,right)의 마진을 지정</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>패딩을 한꺼번에 지정</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-위치</td><td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>display</td><td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td><td>display : block</td></tr><tr><td>float</td><td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td><td>float : left</td></tr><tr><td>clear</td><td>float 속성 해제</td><td>clear : both</td></tr></tbody></table><h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td><td>left:10px</td></tr><tr><td>position</td><td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p><img src="/img/CssBoxModel/CSSBoxModel_title.png" alt="CSS 박스 모델 속성 정리]"><br>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>width</td><td>박스 모델의 너비를 지정</td><td>width: 100px</td></tr><tr><td>height</td><td>박스 모델의 높이를 지정</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>박스 모델의 크기를 게산하는 기준을 지정</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>박스 모델에 그림자 효과를 추가</td><td>box-shadow : 가로 세로 넓이 색상</td></tr></tbody></table><h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>border-style</td><td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td><td>border-style: solid</td></tr><tr><td>border-위치-style</td><td>선택한 위치의 테두리 스타일만 지정</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td><td>border-width: 10px</td></tr><tr><td>border-위치-width</td><td>선택한 위치의 테두리 두께만 지정</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td><td>border-color: #000</td></tr><tr><td>border-위치-color</td><td>선택한 위치의 테두리 색상만 지정</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td><td>border-radius: 10px</td></tr><tr><td>border-위치-radius</td><td>선택한 위치의 꼭지점만 둥글게 지정</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>margin</td><td>마진을 한꺼번에 지정</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-위치</td><td>정해진 위치(top,left,bottom,right)의 마진을 지정</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>패딩을 한꺼번에 지정</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-위치</td><td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>display</td><td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td><td>display : block</td></tr><tr><td>float</td><td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td><td>float : left</td></tr><tr><td>clear</td><td>float 속성 해제</td><td>clear : both</td></tr></tbody></table><h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td><td>left:10px</td></tr><tr><td>position</td><td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
-&lt;h2 id=&quot;박스-모델-속성&quot;&gt;&lt;a href=&quot;#박스-모델-속성&quot; class=&quot;headerlink&quot; title=&quot;박스 모델 속성&quot;&gt;&lt;/a&gt;박스 모
+        &lt;p&gt;&lt;img src=&quot;/img/CssBoxModel/CSSBoxModel_title.png&quot; alt=&quot;CSS 박스 모델 속성 정리]&quot;&gt;&lt;br&gt;대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
+&lt;h2 i
       
     
     </summary>
@@ -70,13 +70,13 @@
       <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
     
     
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
     
       <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
   </entry>
   
@@ -106,11 +106,11 @@
       <category term="My Opinions" scheme="https://slim8020.github.io/categories/My-Opinions/"/>
     
     
-      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
     
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+      <category term="webpublishing" scheme="https://slim8020.github.io/tags/webpublishing/"/>
     
   </entry>
   
