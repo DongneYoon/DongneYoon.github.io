@@ -3,36 +3,36 @@
 
 
     <url>
+        <loc>https://slim8020.github.io/tags/transition/</loc>
+        <lastmod>2021-05-10T13:49:50.518Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/tags/html/</loc>
-        <lastmod>2021-05-10T13:41:24.062Z</lastmod>
+        <lastmod>2021-05-10T13:49:50.518Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/css/</loc>
-        <lastmod>2021-05-10T13:41:24.062Z</lastmod>
+        <lastmod>2021-05-10T13:49:50.518Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/web/</loc>
-        <lastmod>2021-05-10T13:41:24.062Z</lastmod>
+        <lastmod>2021-05-10T13:49:50.518Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://slim8020.github.io/tags/publishing/</loc>
-        <lastmod>2021-05-10T13:41:24.062Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/transition/</loc>
-        <lastmod>2021-05-10T04:41:30.823Z</lastmod>
+        <lastmod>2021-05-10T13:49:50.518Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -40,13 +40,6 @@
     <url>
         <loc>https://slim8020.github.io/tags/webpublishing/</loc>
         <lastmod>2021-05-04T07:39:30.211Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
-        <lastmod>2021-05-04T07:37:43.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -66,13 +59,6 @@
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/SoftwareTest/</loc>
-        <lastmod>2021-05-04T07:37:43.116Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://slim8020.github.io/tags/BlackBox/</loc>
         <lastmod>2021-05-04T07:37:43.116Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -81,6 +67,20 @@
 
     <url>
         <loc>https://slim8020.github.io/tags/WhiteBox/</loc>
+        <lastmod>2021-05-04T07:37:43.116Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+        <lastmod>2021-05-04T07:37:43.116Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/SoftwareTest/</loc>
         <lastmod>2021-05-04T07:37:43.116Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>

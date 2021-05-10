@@ -304,7 +304,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/10/input_form/" data-id="ckoim0z4c0009u8wtkr9dr5it" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/10/input_form/" data-id="ckointfjw003i54wtsyfzi3vj" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -316,10 +316,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-css_boxmodel" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-css_transition" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2021/05/04/css_boxmodel/" class="article-date">
-  <time datetime="2021-05-04T06:32:03.000Z" itemprop="datePublished">2021-05-04</time>
+    <a href="/2021/05/10/css_transition/" class="article-date">
+  <time datetime="2021-05-10T02:32:03.000Z" itemprop="datePublished">2021-05-10</time>
 </a>
     
   <div class="article-category">
@@ -334,7 +334,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/css_boxmodel/">Summary of CSS Box Model Properties</a>
+      <a class="article-title" href="/2021/05/10/css_transition/">Summary of CSS Transitions</a>
     </h1>
   
 
@@ -342,8 +342,8 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/img/CssBoxModel/CSSBoxModel_title.png" alt="Summary of CSS Box Model Properties"><br>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p>
-<h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table>
+        <p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p>
+<h2 id="Transition-attribute"><a href="#Transition-attribute" class="headerlink" title="Transition attribute"></a>Transition attribute</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -353,28 +353,33 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>width</td>
-<td>Specify the width of the box model</td>
-<td>width: 100px</td>
+<td>transition-property</td>
+<td>Targeting the transition</td>
+<td>transition-property: width, height</td>
 </tr>
 <tr>
-<td>height</td>
-<td>Specify the height of the box model</td>
-<td>height: 100px</td>
+<td>transition-duration</td>
+<td>Targeting the transition</td>
+<td>transition-property: width, height</td>
 </tr>
 <tr>
-<td>box-sizing</td>
-<td>Specifies the criteria for calculating the size of the box model</td>
-<td>box-sizing : border-box / box-sizing : content-box</td>
+<td>transition-timing-function</td>
+<td>Targeting the transition</td>
+<td>transition-property: width, height</td>
 </tr>
 <tr>
-<td>box-shadow</td>
-<td>Adding a shadow effect to the box model</td>
-<td>box-shadow : width height area color</td>
+<td>transition-delay</td>
+<td>Targeting the transition</td>
+<td>transition-property: width, height</td>
+</tr>
+<tr>
+<td>transition</td>
+<td>Targeting the transition</td>
+<td>transition-property: width, height</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table>
+<h2 id="transition-properties"><a href="#transition-properties" class="headerlink" title="transition properties"></a>transition properties</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -384,48 +389,23 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>border-style</td>
-<td>Designate border styles in 4 directions at once</td>
-<td>border-style: solid</td>
+<td>all</td>
+<td>All properties are transition targets. Default</td>
+<td>transition : all</td>
 </tr>
 <tr>
-<td>border-‘location’-style</td>
-<td>Specify only the border style at the selected location</td>
-<td>border-top-style: solid</td>
+<td>none</td>
+<td>No properties change during transition</td>
+<td>transition : none</td>
 </tr>
 <tr>
-<td>border-width</td>
-<td>Specify the thickness of the borders in 4 directions at once</td>
-<td>border-width: 10px</td>
-</tr>
-<tr>
-<td>border-‘location’-width</td>
-<td>Specify only the thickness of the border at the selected location</td>
-<td>border-top-width: 10px</td>
-</tr>
-<tr>
-<td>border-color</td>
-<td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td>
-<td>border-color: #000</td>
-</tr>
-<tr>
-<td>border-‘location’-color</td>
-<td>Specify only the border color at the selected location</td>
-<td>border-top-color: #f00</td>
-</tr>
-<tr>
-<td>border-radius</td>
-<td>Round the vertices in four directions, top, bottom, left, and right</td>
-<td>border-radius: 10px</td>
-</tr>
-<tr>
-<td>border-‘location’-radius</td>
-<td>Round only the vertices of the selected location</td>
-<td>border-top=left-radius: 10px</td>
+<td>property name</td>
+<td>Specify the properties to apply the transition effect (background color, width, height, etc…)</td>
+<td>transition : width, height</td>
 </tr>
 </tbody>
 </table>
-<h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table>
+<h2 id="transition-timing-function-properties"><a href="#transition-timing-function-properties" class="headerlink" title="transition-timing-function properties"></a>transition-timing-function properties</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -435,71 +415,34 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>margin</td>
-<td>Specify margins at once</td>
-<td>margin: 10px 10px 5px 5px</td>
+<td>ease</td>
+<td>Start slowly at first, get faster, and finish slowly at the end. Default</td>
+<td>transition-timing-function : ease</td>
 </tr>
 <tr>
-<td>margin-‘location’</td>
-<td>Specify the margin of the specified position (top, left, bottom, right)</td>
-<td>margin-top: 10px</td>
+<td>linear</td>
+<td>Progress at the same speed from start to finish.</td>
+<td>transition-timing-function : linear</td>
 </tr>
 <tr>
-<td>padding</td>
-<td>Specify padding all at once</td>
-<td>padding: 10px 10px 5px 5px</td>
+<td>ease-in</td>
+<td>Start slowly</td>
+<td>transition-timing-function : ease-in</td>
 </tr>
 <tr>
-<td>padding-‘location’</td>
-<td>Specify the padding of a fixed position (top, left, bottom, right)</td>
-<td>padding-top: 10px</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table>
-<thead>
-<tr>
-<th>Propeties</th>
-<th>Explanation</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>display</td>
-<td>Specify how to place elements on the screen (block, inline, inline-block, none)</td>
-<td>display : block</td>
+<td>ease-out</td>
+<td>End slowly</td>
+<td>transition-timing-function : ease-out</td>
 </tr>
 <tr>
-<td>float</td>
-<td>Place web elements left or right.</td>
-<td>float : left</td>
+<td>ease-in-out</td>
+<td>Starts Slowly Ends Slowly</td>
+<td>transition-timing-function : ease-in-out</td>
 </tr>
 <tr>
-<td>clear</td>
-<td>Turn off the float property</td>
-<td>clear : both</td>
-</tr>
-</tbody>
-</table>
-<h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table>
-<thead>
-<tr>
-<th>Propeties</th>
-<th>Explanation</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>left, right, top, bottom</td>
-<td>Specifies how far up, down, left, and right between the anchor and the element</td>
-<td>left:10px</td>
-</tr>
-<tr>
-<td>position</td>
-<td>Positioning of web elements (static, relative, absolute, fixed)</td>
-<td>position: relative</td>
+<td>cubic-bezier(n,n,n,n)</td>
+<td>Define and use a Bezier function. n value is used only between 0 and 1</td>
+<td>transition-timing-function : cubic-bezier(0.1, 0.5, 0.5, 0.2)</td>
 </tr>
 </tbody>
 </table>
@@ -507,10 +450,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="ckohz4md5000bt0wtitbriaol" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/10/css_transition/" data-id="ckointfi4000g54wtyns9gc23" class="article-share-link">공유</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition/">transition</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
 
     </footer>
   </div>
@@ -722,7 +665,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="ckohz4mel002mt0wtjk3poq2n" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="ckointfi0000c54wtr85t4y5p" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -734,9 +677,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-css_transition" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-css_boxmodel" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2021/05/04/css_transition/" class="article-date">
+    <a href="/2021/05/04/css_boxmodel/" class="article-date">
   <time datetime="2021-05-04T06:32:03.000Z" itemprop="datePublished">2021-05-04</time>
 </a>
     
@@ -752,7 +695,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/04/css_transition/">Summary of CSS Transitions</a>
+      <a class="article-title" href="/2021/05/04/css_boxmodel/">Summary of CSS Box Model Properties</a>
     </h1>
   
 
@@ -761,7 +704,7 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p>
-<h2 id="Transition-attribute"><a href="#Transition-attribute" class="headerlink" title="Transition attribute"></a>Transition attribute</h2><table>
+<h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -771,33 +714,28 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>transition-property</td>
-<td>Targeting the transition</td>
-<td>transition-property: width, height</td>
+<td>width</td>
+<td>Specify the width of the box model</td>
+<td>width: 100px</td>
 </tr>
 <tr>
-<td>transition-duration</td>
-<td>Targeting the transition</td>
-<td>transition-property: width, height</td>
+<td>height</td>
+<td>Specify the height of the box model</td>
+<td>height: 100px</td>
 </tr>
 <tr>
-<td>transition-timing-function</td>
-<td>Targeting the transition</td>
-<td>transition-property: width, height</td>
+<td>box-sizing</td>
+<td>Specifies the criteria for calculating the size of the box model</td>
+<td>box-sizing : border-box / box-sizing : content-box</td>
 </tr>
 <tr>
-<td>transition-delay</td>
-<td>Targeting the transition</td>
-<td>transition-property: width, height</td>
-</tr>
-<tr>
-<td>transition</td>
-<td>Targeting the transition</td>
-<td>transition-property: width, height</td>
+<td>box-shadow</td>
+<td>Adding a shadow effect to the box model</td>
+<td>box-shadow : width height area color</td>
 </tr>
 </tbody>
 </table>
-<h2 id="transition-properties"><a href="#transition-properties" class="headerlink" title="transition properties"></a>transition properties</h2><table>
+<h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -807,23 +745,48 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>all</td>
-<td>All properties are transition targets. Default</td>
-<td>transition : all</td>
+<td>border-style</td>
+<td>Designate border styles in 4 directions at once</td>
+<td>border-style: solid</td>
 </tr>
 <tr>
-<td>none</td>
-<td>No properties change during transition</td>
-<td>transition : none</td>
+<td>border-‘location’-style</td>
+<td>Specify only the border style at the selected location</td>
+<td>border-top-style: solid</td>
 </tr>
 <tr>
-<td>property name</td>
-<td>Specify the properties to apply the transition effect (background color, width, height, etc…)</td>
-<td>transition : width, height</td>
+<td>border-width</td>
+<td>Specify the thickness of the borders in 4 directions at once</td>
+<td>border-width: 10px</td>
+</tr>
+<tr>
+<td>border-‘location’-width</td>
+<td>Specify only the thickness of the border at the selected location</td>
+<td>border-top-width: 10px</td>
+</tr>
+<tr>
+<td>border-color</td>
+<td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td>
+<td>border-color: #000</td>
+</tr>
+<tr>
+<td>border-‘location’-color</td>
+<td>Specify only the border color at the selected location</td>
+<td>border-top-color: #f00</td>
+</tr>
+<tr>
+<td>border-radius</td>
+<td>Round the vertices in four directions, top, bottom, left, and right</td>
+<td>border-radius: 10px</td>
+</tr>
+<tr>
+<td>border-‘location’-radius</td>
+<td>Round only the vertices of the selected location</td>
+<td>border-top=left-radius: 10px</td>
 </tr>
 </tbody>
 </table>
-<h2 id="transition-timing-function-properties"><a href="#transition-timing-function-properties" class="headerlink" title="transition-timing-function properties"></a>transition-timing-function properties</h2><table>
+<h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table>
 <thead>
 <tr>
 <th>Propeties</th>
@@ -833,34 +796,71 @@ ga('send', 'pageview');
 </thead>
 <tbody>
 <tr>
-<td>ease</td>
-<td>Start slowly at first, get faster, and finish slowly at the end. Default</td>
-<td>transition-timing-function : ease</td>
+<td>margin</td>
+<td>Specify margins at once</td>
+<td>margin: 10px 10px 5px 5px</td>
 </tr>
 <tr>
-<td>linear</td>
-<td>Progress at the same speed from start to finish.</td>
-<td>transition-timing-function : linear</td>
+<td>margin-‘location’</td>
+<td>Specify the margin of the specified position (top, left, bottom, right)</td>
+<td>margin-top: 10px</td>
 </tr>
 <tr>
-<td>ease-in</td>
-<td>Start slowly</td>
-<td>transition-timing-function : ease-in</td>
+<td>padding</td>
+<td>Specify padding all at once</td>
+<td>padding: 10px 10px 5px 5px</td>
 </tr>
 <tr>
-<td>ease-out</td>
-<td>End slowly</td>
-<td>transition-timing-function : ease-out</td>
+<td>padding-‘location’</td>
+<td>Specify the padding of a fixed position (top, left, bottom, right)</td>
+<td>padding-top: 10px</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table>
+<thead>
+<tr>
+<th>Propeties</th>
+<th>Explanation</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>Specify how to place elements on the screen (block, inline, inline-block, none)</td>
+<td>display : block</td>
 </tr>
 <tr>
-<td>ease-in-out</td>
-<td>Starts Slowly Ends Slowly</td>
-<td>transition-timing-function : ease-in-out</td>
+<td>float</td>
+<td>Place web elements left or right.</td>
+<td>float : left</td>
 </tr>
 <tr>
-<td>cubic-bezier(n,n,n,n)</td>
-<td>Define and use a Bezier function. n value is used only between 0 and 1</td>
-<td>transition-timing-function : cubic-bezier(0.1, 0.5, 0.5, 0.2)</td>
+<td>clear</td>
+<td>Turn off the float property</td>
+<td>clear : both</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table>
+<thead>
+<tr>
+<th>Propeties</th>
+<th>Explanation</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left, right, top, bottom</td>
+<td>Specifies how far up, down, left, and right between the anchor and the element</td>
+<td>left:10px</td>
+</tr>
+<tr>
+<td>position</td>
+<td>Positioning of web elements (static, relative, absolute, fixed)</td>
+<td>position: relative</td>
 </tr>
 </tbody>
 </table>
@@ -868,10 +868,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/css_transition/" data-id="ckoi41g4d0000u8wts4fcjgzd" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="ckointfi8000h54wtwu037t7y" class="article-share-link">공유</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition/">transition</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
 
     </footer>
   </div>
@@ -937,7 +937,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="ckohz4meg002kt0wta22ockgf" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="ckointfic000l54wtz58zmp3h" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpublishing/">webpublishing</a></li></ul>
@@ -1028,7 +1028,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="ckohz4mcu0002t0wt717bmqav" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="ckointfhn000354wt6fv4cpkh" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NODE/">NODE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NPM/">NPM</a></li></ul>
@@ -1094,7 +1094,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="ckohz4mcq0001t0wt32xakwoc" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="ckointfhg000154wt8bw6jl5k" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AdobeXD/">AdobeXD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Development/">Development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Plugin/">Plugin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/개발/">개발</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/어도비XD/">어도비XD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/플러그인/">플러그인</a></li></ul>
@@ -1169,7 +1169,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="ckohz4mcz0006t0wtjq8uek1u" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="ckointfhw000854wticq03065" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NonFunctional/">NonFunctional</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PerformanceTest/">PerformanceTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/비기능테스트/">비기능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/성능테스트/">성능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li></ul>
@@ -1237,7 +1237,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/" data-id="ckohz4md4000at0wthkdaa3s6" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/" data-id="ckointfhs000654wtmy6cvdwu" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/탐색적테스트/">탐색적테스트</a></li></ul>
@@ -1321,7 +1321,7 @@ else
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/" data-id="ckohz4mcx0005t0wtbrxt519l" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/" data-id="ckointfhy000b54wt98u9m981" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BlackBox/">BlackBox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WhiteBox/">WhiteBox</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/블랙박스테스트/">블랙박스테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/화이트박스테스트/">화이트박스테스트</a></li></ul>
@@ -1365,7 +1365,7 @@ else
           </li>
         
           <li>
-            <a href="/2021/05/04/css_boxmodel/">Summary of CSS Box Model Properties</a>
+            <a href="/2021/05/10/css_transition/">Summary of CSS Transitions</a>
           </li>
         
           <li>
@@ -1373,7 +1373,7 @@ else
           </li>
         
           <li>
-            <a href="/2021/05/04/css_transition/">Summary of CSS Transitions</a>
+            <a href="/2021/05/04/css_boxmodel/">Summary of CSS Box Model Properties</a>
           </li>
         
           <li>

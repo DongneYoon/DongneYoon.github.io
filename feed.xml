@@ -49,19 +49,20 @@
   </entry>
   
   <entry>
-    <title>Summary of CSS Box Model Properties</title>
-    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
-    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
-    <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-10T13:41:24.062Z</updated>
+    <title>Summary of CSS Transitions</title>
+    <link href="https://slim8020.github.io/2021/05/10/css_transition/"/>
+    <id>https://slim8020.github.io/2021/05/10/css_transition/</id>
+    <published>2021-05-10T02:32:03.000Z</published>
+    <updated>2021-05-10T13:49:50.518Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/CssBoxModel/CSSBoxModel_title.png" alt="Summary of CSS Box Model Properties"><br>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>width</td><td>Specify the width of the box model</td><td>width: 100px</td></tr><tr><td>height</td><td>Specify the height of the box model</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>Specifies the criteria for calculating the size of the box model</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>Adding a shadow effect to the box model</td><td>box-shadow : width height area color</td></tr></tbody></table><h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>border-style</td><td>Designate border styles in 4 directions at once</td><td>border-style: solid</td></tr><tr><td>border-‘location’-style</td><td>Specify only the border style at the selected location</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>Specify the thickness of the borders in 4 directions at once</td><td>border-width: 10px</td></tr><tr><td>border-‘location’-width</td><td>Specify only the thickness of the border at the selected location</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td><td>border-color: #000</td></tr><tr><td>border-‘location’-color</td><td>Specify only the border color at the selected location</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>Round the vertices in four directions, top, bottom, left, and right</td><td>border-radius: 10px</td></tr><tr><td>border-‘location’-radius</td><td>Round only the vertices of the selected location</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>margin</td><td>Specify margins at once</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-‘location’</td><td>Specify the margin of the specified position (top, left, bottom, right)</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>Specify padding all at once</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-‘location’</td><td>Specify the padding of a fixed position (top, left, bottom, right)</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>display</td><td>Specify how to place elements on the screen (block, inline, inline-block, none)</td><td>display : block</td></tr><tr><td>float</td><td>Place web elements left or right.</td><td>float : left</td></tr><tr><td>clear</td><td>Turn off the float property</td><td>clear : both</td></tr></tbody></table><h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>Specifies how far up, down, left, and right between the anchor and the element</td><td>left:10px</td></tr><tr><td>position</td><td>Positioning of web elements (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Transition-attribute"><a href="#Transition-attribute" class="headerlink" title="Transition attribute"></a>Transition attribute</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>transition-property</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-duration</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-timing-function</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-delay</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr></tbody></table><h2 id="transition-properties"><a href="#transition-properties" class="headerlink" title="transition properties"></a>transition properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>all</td><td>All properties are transition targets. Default</td><td>transition : all</td></tr><tr><td>none</td><td>No properties change during transition</td><td>transition : none</td></tr><tr><td>property name</td><td>Specify the properties to apply the transition effect (background color, width, height, etc…)</td><td>transition : width, height</td></tr></tbody></table><h2 id="transition-timing-function-properties"><a href="#transition-timing-function-properties" class="headerlink" title="transition-timing-function properties"></a>transition-timing-function properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>ease</td><td>Start slowly at first, get faster, and finish slowly at the end. Default</td><td>transition-timing-function : ease</td></tr><tr><td>linear</td><td>Progress at the same speed from start to finish.</td><td>transition-timing-function : linear</td></tr><tr><td>ease-in</td><td>Start slowly</td><td>transition-timing-function : ease-in</td></tr><tr><td>ease-out</td><td>End slowly</td><td>transition-timing-function : ease-out</td></tr><tr><td>ease-in-out</td><td>Starts Slowly Ends Slowly</td><td>transition-timing-function : ease-in-out</td></tr><tr><td>cubic-bezier(n,n,n,n)</td><td>Define and use a Bezier function. n value is used only between 0 and 1</td><td>transition-timing-function : cubic-bezier(0.1, 0.5, 0.5, 0.2)</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/img/CssBoxModel/CSSBoxModel_title.png&quot; alt=&quot;Summary of CSS Box Model Properties&quot;&gt;&lt;br&gt;You should be familiar with most of the p
+        &lt;p&gt;You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.&lt;/p&gt;
+&lt;h2 id=
       
     
     </summary>
@@ -76,6 +77,8 @@
       <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+      <category term="transition" scheme="https://slim8020.github.io/tags/transition/"/>
     
   </entry>
   
@@ -112,13 +115,13 @@
   </entry>
   
   <entry>
-    <title>Summary of CSS Transitions</title>
-    <link href="https://slim8020.github.io/2021/05/04/css_transition/"/>
-    <id>https://slim8020.github.io/2021/05/04/css_transition/</id>
+    <title>Summary of CSS Box Model Properties</title>
+    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
+    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
     <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-10T04:41:30.823Z</updated>
+    <updated>2021-05-10T13:48:57.078Z</updated>
     
-    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Transition-attribute"><a href="#Transition-attribute" class="headerlink" title="Transition attribute"></a>Transition attribute</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>transition-property</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-duration</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-timing-function</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-delay</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr></tbody></table><h2 id="transition-properties"><a href="#transition-properties" class="headerlink" title="transition properties"></a>transition properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>all</td><td>All properties are transition targets. Default</td><td>transition : all</td></tr><tr><td>none</td><td>No properties change during transition</td><td>transition : none</td></tr><tr><td>property name</td><td>Specify the properties to apply the transition effect (background color, width, height, etc…)</td><td>transition : width, height</td></tr></tbody></table><h2 id="transition-timing-function-properties"><a href="#transition-timing-function-properties" class="headerlink" title="transition-timing-function properties"></a>transition-timing-function properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>ease</td><td>Start slowly at first, get faster, and finish slowly at the end. Default</td><td>transition-timing-function : ease</td></tr><tr><td>linear</td><td>Progress at the same speed from start to finish.</td><td>transition-timing-function : linear</td></tr><tr><td>ease-in</td><td>Start slowly</td><td>transition-timing-function : ease-in</td></tr><tr><td>ease-out</td><td>End slowly</td><td>transition-timing-function : ease-out</td></tr><tr><td>ease-in-out</td><td>Starts Slowly Ends Slowly</td><td>transition-timing-function : ease-in-out</td></tr><tr><td>cubic-bezier(n,n,n,n)</td><td>Define and use a Bezier function. n value is used only between 0 and 1</td><td>transition-timing-function : cubic-bezier(0.1, 0.5, 0.5, 0.2)</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>width</td><td>Specify the width of the box model</td><td>width: 100px</td></tr><tr><td>height</td><td>Specify the height of the box model</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>Specifies the criteria for calculating the size of the box model</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>Adding a shadow effect to the box model</td><td>box-shadow : width height area color</td></tr></tbody></table><h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>border-style</td><td>Designate border styles in 4 directions at once</td><td>border-style: solid</td></tr><tr><td>border-‘location’-style</td><td>Specify only the border style at the selected location</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>Specify the thickness of the borders in 4 directions at once</td><td>border-width: 10px</td></tr><tr><td>border-‘location’-width</td><td>Specify only the thickness of the border at the selected location</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td><td>border-color: #000</td></tr><tr><td>border-‘location’-color</td><td>Specify only the border color at the selected location</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>Round the vertices in four directions, top, bottom, left, and right</td><td>border-radius: 10px</td></tr><tr><td>border-‘location’-radius</td><td>Round only the vertices of the selected location</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>margin</td><td>Specify margins at once</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-‘location’</td><td>Specify the margin of the specified position (top, left, bottom, right)</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>Specify padding all at once</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-‘location’</td><td>Specify the padding of a fixed position (top, left, bottom, right)</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>display</td><td>Specify how to place elements on the screen (block, inline, inline-block, none)</td><td>display : block</td></tr><tr><td>float</td><td>Place web elements left or right.</td><td>float : left</td></tr><tr><td>clear</td><td>Turn off the float property</td><td>clear : both</td></tr></tbody></table><h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>Specifies how far up, down, left, and right between the anchor and the element</td><td>left:10px</td></tr><tr><td>position</td><td>Positioning of web elements (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -140,8 +143,6 @@
       <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-      <category term="transition" scheme="https://slim8020.github.io/tags/transition/"/>
     
   </entry>
   
@@ -267,9 +268,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -305,13 +306,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -337,17 +338,17 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
+      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
       <category term="WhiteBox" scheme="https://slim8020.github.io/tags/WhiteBox/"/>
     
       <category term="BlackBox" scheme="https://slim8020.github.io/tags/BlackBox/"/>
     
-      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
-    
       <category term="화이트박스테스트" scheme="https://slim8020.github.io/tags/%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="블랙박스테스트" scheme="https://slim8020.github.io/tags/%EB%B8%94%EB%9E%99%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
