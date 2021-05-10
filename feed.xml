@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-04T07:44:04.505Z</updated>
+  <updated>2021-05-10T13:41:22.982Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -17,13 +17,76 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>사용자 입력에 필요한 HTML 정리</title>
+    <link href="https://slim8020.github.io/2021/05/10/input_form/"/>
+    <id>https://slim8020.github.io/2021/05/10/input_form/</id>
+    <published>2021-05-10T06:32:03.000Z</published>
+    <updated>2021-05-10T13:41:22.982Z</updated>
+    
+    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="폼-관련-태그"><a href="#폼-관련-태그" class="headerlink" title="폼 관련 태그"></a>폼 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;form&gt;</td><td>폼의 시작과 끝</td></tr><tr><td>&lt;fieldset&gt;</td><td>폼 요소를 그룹으로 묶음</td></tr><tr><td>&lt;legend&gt;</td><td>필드셋에 제목을 나타냄</td></tr><tr><td>&lt;input&gt;</td><td>사용자 입력 받을 필드를 삽입</td></tr><tr><td>&lt;select&gt;</td><td>드롭다운 목록 삽입</td></tr><tr><td>&lt;option&gt;</td><td>드롭다운 목록 삽입</td></tr><tr><td>&lt;textarea&gt;</td><td>텍스트를 여러줄로 입력할 수 있는 텍스트 영역 삽입</td></tr><tr><td>&lt;datalist&gt;</td><td>데이터 목록 삽입</td></tr></tbody></table><h2 id="input-태그-타입"><a href="#input-태그-타입" class="headerlink" title="input 태그 타입"></a>input 태그 타입</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>text</td><td>한줄짜리 텍스트 입력</td></tr><tr><td>password</td><td>비밀번호를 입력 (텍스트 표시가 *로 표시)</td></tr><tr><td>search</td><td>검색할 때 입력하는 필드</td></tr><tr><td>url</td><td>URL 주소를 입력할 수 있는 필드</td></tr><tr><td>email</td><td>이메일 주소를 입력할 수 있는 필드</td></tr><tr><td>tel</td><td>전화번호를 입력 할 수 있는 필드</td></tr><tr><td>checkbox</td><td>체크박스 (여러 항목 중 여러개 선택 가능)</td></tr><tr><td>radio</td><td>라디오 버튼 (여러 항목 중 한개만 선택 가능)</td></tr><tr><td>number</td><td>값을 조절할 수 있는 스핀박스</td></tr><tr><td>range</td><td>숫자를 조절 할 수 있는 슬라이더</td></tr><tr><td>date</td><td>사용자 지역 기준 연,월,일 입력 필드</td></tr><tr><td>month</td><td>사용자 지역 기준 연,월 입력 필드</td></tr><tr><td>week</td><td>사용자 지역 기준 연,주 입력 필드</td></tr><tr><td>time</td><td>사용자 지역 기준 시간(시,분,초) 입력 필드</td></tr><tr><td>datetime</td><td>국제 표준시(UTC)로 설정된 날짜와 시간(연,월,일,시,분,초) 입력</td></tr><tr><td>datetime-local</td><td>사용자 지역 기준 날짜와 시간(연,월,일,시,분,초) 입력</td></tr><tr><td>submit</td><td>전송 버튼</td></tr><tr><td>reset</td><td>리셋 버튼</td></tr><tr><td>image</td><td>이미지 버튼</td></tr><tr><td>button</td><td>일반 버튼</td></tr><tr><td>file</td><td>파일을 첨부 할 수 있는 버튼</td></tr><tr><td>hidden</td><td>사용자에게 보이지 않지만 서버로 넘겨주는 값이 있는 필드</td></tr></tbody></table><h2 id="input-태그-속성"><a href="#input-태그-속성" class="headerlink" title="input 태그 속성"></a>input 태그 속성</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>autofocus</td><td>웹 문서가 열리면 입력 필드 안에 마우스 포인터 표시</td></tr><tr><td>placeholder</td><td>텍스트 필드에 힌트 표시 (좋은 UI 는 아니란다.)</td></tr><tr><td>readonly</td><td>입력 필드를 읽기 전용으로 지정</td></tr><tr><td>required</td><td>필수 입력 필드</td></tr><tr><td>max</td><td>숫자 입력 필드에서 최대값 지정</td></tr><tr><td>min</td><td>숫자 입력 필드에서 최소값 지정</td></tr><tr><td>step</td><td>숫자 입력 필드에서 증감할 간격 지정</td></tr><tr><td>maxlength</td><td>텍스트 입력 최대 길이 지정</td></tr><tr><td>minlength</td><td>텍스트 입력 최소 길이 지정</td></tr><tr><td>size</td><td>텍스트 관련 필드에서 화면에 표시할 크기를 지정</td></tr><tr><td>list</td><td>연결할 데이터 목록을 지정</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
+&lt;h2 id=&quot;폼-관련-태그&quot;&gt;&lt;a href=&quot;#폼-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;폼 관련 태그&quot;&gt;&lt;/a&gt;폼 관련 태그
+      
+    
+    </summary>
+    
+      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
+    
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of CSS Box Model Properties</title>
+    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
+    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
+    <published>2021-05-04T06:32:03.000Z</published>
+    <updated>2021-05-10T13:41:24.062Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/CssBoxModel/CSSBoxModel_title.png" alt="Summary of CSS Box Model Properties"><br>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>width</td><td>Specify the width of the box model</td><td>width: 100px</td></tr><tr><td>height</td><td>Specify the height of the box model</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>Specifies the criteria for calculating the size of the box model</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>Adding a shadow effect to the box model</td><td>box-shadow : width height area color</td></tr></tbody></table><h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>border-style</td><td>Designate border styles in 4 directions at once</td><td>border-style: solid</td></tr><tr><td>border-‘location’-style</td><td>Specify only the border style at the selected location</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>Specify the thickness of the borders in 4 directions at once</td><td>border-width: 10px</td></tr><tr><td>border-‘location’-width</td><td>Specify only the thickness of the border at the selected location</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td><td>border-color: #000</td></tr><tr><td>border-‘location’-color</td><td>Specify only the border color at the selected location</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>Round the vertices in four directions, top, bottom, left, and right</td><td>border-radius: 10px</td></tr><tr><td>border-‘location’-radius</td><td>Round only the vertices of the selected location</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>margin</td><td>Specify margins at once</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-‘location’</td><td>Specify the margin of the specified position (top, left, bottom, right)</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>Specify padding all at once</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-‘location’</td><td>Specify the padding of a fixed position (top, left, bottom, right)</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>display</td><td>Specify how to place elements on the screen (block, inline, inline-block, none)</td><td>display : block</td></tr><tr><td>float</td><td>Place web elements left or right.</td><td>float : left</td></tr><tr><td>clear</td><td>Turn off the float property</td><td>clear : both</td></tr></tbody></table><h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>Specifies how far up, down, left, and right between the anchor and the element</td><td>left:10px</td></tr><tr><td>position</td><td>Positioning of web elements (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/img/CssBoxModel/CSSBoxModel_title.png&quot; alt=&quot;Summary of CSS Box Model Properties&quot;&gt;&lt;br&gt;You should be familiar with most of the p
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
+    
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>자주 쓰는 HTML 태그 정리</title>
     <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
     <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
     <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-04T07:44:04.505Z</updated>
+    <updated>2021-05-10T13:36:08.479Z</updated>
     
-    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="폼에서-사용하는-태그"><a href="#폼에서-사용하는-태그" class="headerlink" title="폼에서 사용하는 태그"></a>폼에서 사용하는 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="lt-input-gt-태그의-타입"><a href="#lt-input-gt-태그의-타입" class="headerlink" title="&lt;input&gt; 태그의 타입"></a>&lt;input&gt; 태그의 타입</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table><h2 id="lt-input-gt-태그의-속성"><a href="#lt-input-gt-태그의-속성" class="headerlink" title="&lt;input&gt; 태그의 속성"></a>&lt;input&gt; 태그의 속성</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
@@ -49,20 +112,20 @@
   </entry>
   
   <entry>
-    <title>CSS 박스 모델의 속성 정리</title>
-    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
-    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
+    <title>Summary of CSS Transitions</title>
+    <link href="https://slim8020.github.io/2021/05/04/css_transition/"/>
+    <id>https://slim8020.github.io/2021/05/04/css_transition/</id>
     <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-09T06:35:33.343Z</updated>
+    <updated>2021-05-10T04:41:30.823Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/img/CssBoxModel/CSSBoxModel_title.png" alt="CSS 박스 모델 속성 정리"><br>대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="박스-모델-속성"><a href="#박스-모델-속성" class="headerlink" title="박스 모델 속성"></a>박스 모델 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>width</td><td>박스 모델의 너비를 지정</td><td>width: 100px</td></tr><tr><td>height</td><td>박스 모델의 높이를 지정</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>박스 모델의 크기를 게산하는 기준을 지정</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>박스 모델에 그림자 효과를 추가</td><td>box-shadow : 가로 세로 넓이 색상</td></tr></tbody></table><h2 id="테두리-속성"><a href="#테두리-속성" class="headerlink" title="테두리 속성"></a>테두리 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>border-style</td><td>상하좌우 4개 방향의 테두리 스타일을 한꺼번에 지정</td><td>border-style: solid</td></tr><tr><td>border-위치-style</td><td>선택한 위치의 테두리 스타일만 지정</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>상하좌우 4개 방향 테두리 두께를 한꺼번에 지정</td><td>border-width: 10px</td></tr><tr><td>border-위치-width</td><td>선택한 위치의 테두리 두께만 지정</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>상하좌우 4개 방향의 테두리 색상을 한꺼번에 지정</td><td>border-color: #000</td></tr><tr><td>border-위치-color</td><td>선택한 위치의 테두리 색상만 지정</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>상하좌우 4개 방향 꼭지점을 한꺼번에 둥글게 지정</td><td>border-radius: 10px</td></tr><tr><td>border-위치-radius</td><td>선택한 위치의 꼭지점만 둥글게 지정</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="여백-속성"><a href="#여백-속성" class="headerlink" title="여백 속성"></a>여백 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>margin</td><td>마진을 한꺼번에 지정</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-위치</td><td>정해진 위치(top,left,bottom,right)의 마진을 지정</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>패딩을 한꺼번에 지정</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-위치</td><td>정해진 위치(top,left,bottom,right)의 패딩을 지정</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="레이아웃-속성"><a href="#레이아웃-속성" class="headerlink" title="레이아웃 속성"></a>레이아웃 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>display</td><td>화면에서 요소를 배치하는 방법 지정 (block, inline, inline-block, none )</td><td>display : block</td></tr><tr><td>float</td><td>웹 요소를 왼쪽이나 오른쪽으로 배치.</td><td>float : left</td></tr><tr><td>clear</td><td>float 속성 해제</td><td>clear : both</td></tr></tbody></table><h2 id="위치-지정-속성"><a href="#위치-지정-속성" class="headerlink" title="위치 지정 속성"></a>위치 지정 속성</h2><table><thead><tr><th>속성</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>기준 위치와 요소 사이에 상하좌우 얼마나 떨어져 있는지 지정</td><td>left:10px</td></tr><tr><td>position</td><td>웹 요소의 위치 지정 (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Transition-attribute"><a href="#Transition-attribute" class="headerlink" title="Transition attribute"></a>Transition attribute</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>transition-property</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-duration</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-timing-function</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition-delay</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr><tr><td>transition</td><td>Targeting the transition</td><td>transition-property: width, height</td></tr></tbody></table><h2 id="transition-properties"><a href="#transition-properties" class="headerlink" title="transition properties"></a>transition properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>all</td><td>All properties are transition targets. Default</td><td>transition : all</td></tr><tr><td>none</td><td>No properties change during transition</td><td>transition : none</td></tr><tr><td>property name</td><td>Specify the properties to apply the transition effect (background color, width, height, etc…)</td><td>transition : width, height</td></tr></tbody></table><h2 id="transition-timing-function-properties"><a href="#transition-timing-function-properties" class="headerlink" title="transition-timing-function properties"></a>transition-timing-function properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>ease</td><td>Start slowly at first, get faster, and finish slowly at the end. Default</td><td>transition-timing-function : ease</td></tr><tr><td>linear</td><td>Progress at the same speed from start to finish.</td><td>transition-timing-function : linear</td></tr><tr><td>ease-in</td><td>Start slowly</td><td>transition-timing-function : ease-in</td></tr><tr><td>ease-out</td><td>End slowly</td><td>transition-timing-function : ease-out</td></tr><tr><td>ease-in-out</td><td>Starts Slowly Ends Slowly</td><td>transition-timing-function : ease-in-out</td></tr><tr><td>cubic-bezier(n,n,n,n)</td><td>Define and use a Bezier function. n value is used only between 0 and 1</td><td>transition-timing-function : cubic-bezier(0.1, 0.5, 0.5, 0.2)</td></tr></tbody></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/img/CssBoxModel/CSSBoxModel_title.png&quot; alt=&quot;CSS 박스 모델 속성 정리&quot;&gt;&lt;br&gt;대부분의 속성은 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
-&lt;h2 id
+        &lt;p&gt;You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.&lt;/p&gt;
+&lt;h2 id=
       
     
     </summary>
@@ -77,6 +140,8 @@
       <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
     
       <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+      <category term="transition" scheme="https://slim8020.github.io/tags/transition/"/>
     
   </entry>
   
@@ -202,9 +267,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
-    
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -240,13 +305,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -272,17 +337,17 @@
       <category term="Software Test" scheme="https://slim8020.github.io/categories/Software-Test/"/>
     
     
-      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="WhiteBox" scheme="https://slim8020.github.io/tags/WhiteBox/"/>
     
       <category term="BlackBox" scheme="https://slim8020.github.io/tags/BlackBox/"/>
     
+      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
+    
       <category term="화이트박스테스트" scheme="https://slim8020.github.io/tags/%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="블랙박스테스트" scheme="https://slim8020.github.io/tags/%EB%B8%94%EB%9E%99%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
