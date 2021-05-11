@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-10T13:41:22.982Z</updated>
+  <updated>2021-05-11T12:47:15.646Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>반응형 관련 CSS 정리 (미디어쿼리)</title>
+    <link href="https://slim8020.github.io/2021/05/11/mediaquery/"/>
+    <id>https://slim8020.github.io/2021/05/11/mediaquery/</id>
+    <published>2021-05-11T12:32:03.000Z</published>
+    <updated>2021-05-11T12:47:15.646Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="미디어-쿼리-속성"><a href="#미디어-쿼리-속성" class="headerlink" title="미디어 쿼리 속성"></a>미디어 쿼리 속성</h2><p>반응형 웹 디자인에서 가장 기본적인 개념.<br>사이트에 접속하는 장치에 따라 특정한 CSS 스타일을 적용.</p><ul><li>형태 : @media [only|not] 미디어 유형 [and 조건] * [and 조건]</li></ul><h2 id="미디어-유형"><a href="#미디어-유형" class="headerlink" title="미디어 유형"></a>미디어 유형</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>all</td><td>모든 미디어 유형</td></tr><tr><td>print</td><td>인쇄 장치</td></tr><tr><td>screen</td><td>PC 스크린 + 스마트폰 스크린</td></tr><tr><td>tv</td><td>음성과 영상이 동시에 출력되는 TV</td></tr><tr><td>aural</td><td>화면을 읽어 소리로 출력해 주는 장치</td></tr><tr><td>braille</td><td>점자 표시 장치</td></tr><tr><td>handled</td><td>패드</td></tr><tr><td>projection</td><td>프로젝터</td></tr><tr><td>tty</td><td>디스플레이 기능이 제한된 장치. 픽셀 단위를 사용할 수 없음</td></tr><tr><td>embossed</td><td>점자 프린터</td></tr></tbody></table><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><h3 id="웹페이지의-너비와-높이"><a href="#웹페이지의-너비와-높이" class="headerlink" title="웹페이지의 너비와 높이"></a>웹페이지의 너비와 높이</h3><p>웹 문서 내용이 화면에 나타나는 영역을 뷰포트라고 하는데 뷰포트의 너비와 높이를 미디어 쿼리 조건으로 사용함.</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>width, height</td><td>뷰포트의 가로, 세로 길이</td></tr><tr><td>min-width, min-height</td><td>뷰포트의 최소 너비, 최소 높이</td></tr><tr><td>max-width, max-height</td><td>뷰포트의 최대 너비, 최대 높이</td></tr></tbody></table><h3 id="단말기의-너비와-높이"><a href="#단말기의-너비와-높이" class="headerlink" title="단말기의 너비와 높이"></a>단말기의 너비와 높이</h3><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>device-width, device-height</td><td>디바이스의 가로, 세로 길이</td></tr><tr><td>min-device-width, min-device-height</td><td>디바이스의 최소 너비, 최소 높이</td></tr><tr><td>max-device-width, max-device-height</td><td>디바이스의 최대 너비, 최대 높이</td></tr></tbody></table><p>예시)<br>@media all and (min-device-width: 360px) and (min-device-height: 640px){<br>}</p><h3 id="화면-회전"><a href="#화면-회전" class="headerlink" title="화면 회전"></a>화면 회전</h3><table><thead><tr><th>종류</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>portrait</td><td>단말기의 세로 모드</td><td>orienntation: portrait</td></tr><tr><td>landscape</td><td>단말기의 가로 모드</td><td>orientation : landscape</td></tr></tbody></table><h2 id="모바일-퍼스트-mobile-first-기법"><a href="#모바일-퍼스트-mobile-first-기법" class="headerlink" title="모바일 퍼스트(mobile first) 기법"></a>모바일 퍼스트(mobile first) 기법</h2><ul><li>다른 기기에 비해 제약 조건이 많은 모바일의 레이아웃을 기본으로 스타일링</li></ul><h2 id="중단점"><a href="#중단점" class="headerlink" title="중단점"></a>중단점</h2><ul><li>기준이 되는 단말기에 따라 달라질 수 있음.</li><li>스마트폰의 경우 미디어 쿼리를 사용하지 않고, 기본 CSS 로 작성</li><li>태블릿의 경우 세로크기가 768px 이상, 가로크기 1024px 이상</li><li>데스크톱의 경우 1024px 이상</li></ul><h2 id="외부-CSS-파일-연결"><a href="#외부-CSS-파일-연결" class="headerlink" title="외부 CSS 파일 연결"></a>외부 CSS 파일 연결</h2><h3 id="link-를-이용할-때"><a href="#link-를-이용할-때" class="headerlink" title="link 를 이용할 때"></a>link 를 이용할 때</h3><p>&lt; link rel=”stylesheet” media= “미디어쿼리조건”    href=”css 파일경로” s&gt; </p><h3 id="import-를-이용할-때"><a href="#import-를-이용할-때" class="headerlink" title="import 를 이용할 때"></a>import 를 이용할 때</h3><p>@import url(“css/pc.css”) only screen and (min-width : 1024px)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;미디어-쿼리-속성&quot;&gt;&lt;a href=&quot;#미디어-쿼리-속성&quot; class=&quot;headerlink&quot; title=&quot;미디어 쿼리 속성&quot;&gt;&lt;/a&gt;미디어 쿼리 속성&lt;/h2&gt;&lt;p&gt;반응형 웹 디자인에서 가장 기본적인 개념.&lt;br&gt;사이트에 접속하는 장치에 따
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
+    
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+      <category term="mediaquery" scheme="https://slim8020.github.io/tags/mediaquery/"/>
+    
+      <category term="flex" scheme="https://slim8020.github.io/tags/flex/"/>
+    
+      <category term="grid" scheme="https://slim8020.github.io/tags/grid/"/>
+    
+  </entry>
   
   <entry>
     <title>사용자 입력에 필요한 HTML 정리</title>
@@ -83,38 +120,6 @@
   </entry>
   
   <entry>
-    <title>자주 쓰는 HTML 태그 정리</title>
-    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
-    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
-    <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-10T13:36:08.479Z</updated>
-    
-    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
-&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
-      
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
-    
-    
-      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
-    
-      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Summary of CSS Box Model Properties</title>
     <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
     <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
@@ -134,6 +139,38 @@
     </summary>
     
       <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
+    
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>자주 쓰는 HTML 태그 정리</title>
+    <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
+    <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
+    <published>2021-05-04T06:32:03.000Z</published>
+    <updated>2021-05-10T13:36:08.479Z</updated>
+    
+    <content type="html"><![CDATA[<p>대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. </p><h2 id="텍스트-관련-태그"><a href="#텍스트-관련-태그" class="headerlink" title="텍스트 관련 태그"></a>텍스트 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;hn&gt;</td><td>제목을 나타냄</td></tr><tr><td>&lt;p&gt;</td><td>텍스트 단락. 내용이 길면 웹브라우저 창의 너비에 맞게 줄바꿈</td></tr><tr><td>&lt;br&gt;</td><td>줄바꿈.</td></tr><tr><td>&lt;blockquote&gt;</td><td>내용 인용. 다른 내용보다 들여쓰고 단락으로 표시됨.</td></tr><tr><td>&lt;strong&gt;</td><td>굵게 표시. 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;b&gt;</td><td>굵게 표시. 중요하지 않음</td></tr><tr><td>&lt;em&gt;</td><td>중요한 텍스트를 기울여 표시(문장). 화면 낭독기에서 강조해서 읽음.</td></tr><tr><td>&lt;i&gt;</td><td>기울여 표시. 중요하지 않음.</td></tr><tr><td>&lt;ins&gt;</td><td>추가한 내용을 표시</td></tr><tr><td>&lt;del&gt;</td><td>삭제한 내용을 표시</td></tr><tr><td>&lt;sup&gt;</td><td>위 첨자</td></tr><tr><td>&lt;sub&gt;</td><td>아래 첨자</td></tr></tbody></table><h2 id="목록-관련-태그"><a href="#목록-관련-태그" class="headerlink" title="목록 관련 태그"></a>목록 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;ol&gt;</td><td>순서 있는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;ul&gt;</td><td>순서 없는 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;li&gt;</td><td>목록의 각 항목을 나타냄.</td></tr><tr><td>&lt;dl&gt;</td><td>설명 목록의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;dt&gt;</td><td>설명 목록의 이름(제목)</td></tr><tr><td>&lt;dd&gt;</td><td>설명 목록의 값(설명)</td></tr></tbody></table><h2 id="표-관련-태그"><a href="#표-관련-태그" class="headerlink" title="표 관련 태그"></a>표 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;table&gt;</td><td>표의 시작과 끝을 나타냄.</td></tr><tr><td>&lt;caption&gt;</td><td>표의 제목</td></tr><tr><td>&lt;tr&gt;</td><td>표의 행</td></tr><tr><td>&lt;td&gt;</td><td>표의 셀</td></tr><tr><td>&lt;th&gt;</td><td>제목 셀</td></tr><tr><td>&lt;thead&gt;</td><td>표 구조에서 제목 부분</td></tr><tr><td>&lt;tbody&gt;</td><td>표 구조에서 본문 부분</td></tr><tr><td>&lt;tfoot&gt;</td><td>표 구조에서 요약이나 정리 부분</td></tr><tr><td>&lt;col&gt;</td><td>표에서 열의 스타일 지정</td></tr><tr><td>&lt;colgroup&gt;</td><td>표에서 여러열을 한꺼번에 묶어 스타일 지정</td></tr></tbody></table><h2 id="멀티미디어-관련-태그"><a href="#멀티미디어-관련-태그" class="headerlink" title="멀티미디어 관련 태그"></a>멀티미디어 관련 태그</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>&lt;object&gt;</td><td>멀티미디어, PDF 파일등 다양한 형식의 파일 삽입</td></tr><tr><td>&lt;embed&gt;</td><td>audio, video, object 태그를 지원하지 않을 경우 멀티미디어 파일 삽입</td></tr><tr><td>&lt;img&gt;</td><td>이미지 파일 삽입</td></tr><tr><td>&lt;audio&gt;</td><td>오디오 파일 삽입</td></tr><tr><td>&lt;video&gt;</td><td>비디오 파일 삽입)</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;대부분의 태그는 숙지하고 있어야 겠지만 개발 시 기억이 안날 수 있으므로 정리 해 둔다. &lt;/p&gt;
+&lt;h2 id=&quot;텍스트-관련-태그&quot;&gt;&lt;a href=&quot;#텍스트-관련-태그&quot; class=&quot;headerlink&quot; title=&quot;텍스트 관련 태그&quot;&gt;&lt;/a&gt;텍
+      
+    
+    </summary>
+    
+      <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
     
     
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
