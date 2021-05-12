@@ -79,6 +79,106 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-we_browser_exec" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/05/12/we_browser_exec/" class="article-date">
+  <time datetime="2021-05-12T09:19:03.000Z" itemprop="datePublished">2021-05-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Javascript/">Javascript</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/12/we_browser_exec/">웹 브라우저가 스크립트를 해석하는 과정 외 JS 학습 내용</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="웹-브라우저가-스크립트를-해석하는-과정"><a href="#웹-브라우저가-스크립트를-해석하는-과정" class="headerlink" title="웹 브라우저가 스크립트를 해석하는 과정"></a>웹 브라우저가 스크립트를 해석하는 과정</h2><ol>
+<li>&lt;!DOCTYPE html &gt; 을 보고 이 문서가 html 문서임을 인식하여 html 표준에 맞춰서 해석 시작</li>
+<li>html 태그 사이의 순서와 포함관계 확인<ul>
+<li>head 태그 사이에 어떤 태그가 있는가?</li>
+<li>body 태그 사이에 어떤 태그가 있는가?</li>
+<li>순서와 포함관계 확인.</li>
+</ul>
+</li>
+<li>태그분석 후 스타일 정보 분석</li>
+<li>script 태그를 만나면 웹브라우저 내부의 자바스크립트 해석기에 스크립트 소스를 넘김.<br>자바스크립트 해석기는 script 사이의 소스를 해석함.</li>
+<li>분석된 태그와 스타일 정보를 기준으로 웹 브라우저에 화면 표시</li>
+<li>자바 스크립트가 해석될 액션이 있으면 자바 스크립트를 실행</li>
+</ol>
+<h2 id="C-계열-언어와-다른-비교-연산자"><a href="#C-계열-언어와-다른-비교-연산자" class="headerlink" title="C 계열 언어와 다른 비교 연산자"></a>C 계열 언어와 다른 비교 연산자</h2><p>내가 배운 언어들과 다른 연산자. 기억 해 두자.</p>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>===</td>
+<td>값과 자료형이 모두 같을 때</td>
+</tr>
+<tr>
+<td>!==</td>
+<td>값이나 자료형 둘중에 하나가 다를 떄</td>
+</tr>
+</tbody>
+</table>
+<h2 id="함수-선언과-실행-순서"><a href="#함수-선언과-실행-순서" class="headerlink" title="함수 선언과 실행 순서"></a>함수 선언과 실행 순서</h2><p>Javascript 는 선언과 호출에 순서 상관 없이 작성할 수 있음.</p>
+<p>웹브라우저가 자바스크립트 소스 해석 시 함수 선언 부분을 먼저 하기 때문에<br>선언한 위치와 상관 없이 호출 할 수 있음.</p>
+<p>선언을 먼저 하고 호출한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*호출*/</span><br><span class="line">a();</span><br></pre></td></tr></table></figure></p>
+<p>호츌을 먼저 하고 선언을 한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*호출*/</span><br><span class="line">a();</span><br><span class="line"></span><br><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="변수의-적용-스코프"><a href="#변수의-적용-스코프" class="headerlink" title="변수의 적용 스코프"></a>변수의 적용 스코프</h2><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>지역변수</td>
+<td>해당 함수 안에서만 사용 가능. 함수 안에서 var 예약어로 선언 해야 함.</td>
+</tr>
+<tr>
+<td>전역변수</td>
+<td>적용 범위 없이 사용 가능. 함수 밖에서 선언 할 때는 var 사용. 함수 내에서 사용할 경우 var 예약어 없이 사용.</td>
+</tr>
+<tr>
+<td>호이스팅</td>
+<td>“끌어올린다” 라는 의미. 변수가 호출되고 나중에 선언하더라도 끌어올려서 선언 된 변수로 처리. <br> 함수 내에서 어디서든 선언할 수 있는 자유도가 생김.</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://slim8020.github.io/2021/05/12/we_browser_exec/" data-id="ckol95hz2000oh0wtiwptzwnz" class="article-share-link">공유</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-mediaquery" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/05/11/mediaquery/" class="article-date">
@@ -241,7 +341,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/11/mediaquery/" data-id="ckok14l4r00009gwt92gtjmw6" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/11/mediaquery/" data-id="ckol95hz7000th0wt8h8q8rbg" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/flex/">flex</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/grid/">grid</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mediaquery/">mediaquery</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -478,7 +578,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/10/input_form/" data-id="ckok0p61e000ockwtx900ij3t" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/10/input_form/" data-id="ckol95hz3000ph0wtqc0jv6p8" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -624,7 +724,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/10/css_transition/" data-id="ckok0p6120008ckwtf1776wjh" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/10/css_transition/" data-id="ckol95hyw000hh0wtxyqb4734" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/transition/">transition</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -827,7 +927,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="ckok0p615000cckwtsdd76pa7" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/04/css_boxmodel/" data-id="ckol95hyr000dh0wtlw64lsch" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -1042,7 +1142,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="ckok0p61g000qckwt9vmsaf4z" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/05/04/html_tag/" data-id="ckol95hyy000jh0wtevn10czr" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/publishing/">publishing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
@@ -1111,7 +1211,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="ckok0p61a000hckwtwtocgeri" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/23/web_publishing_memo/" data-id="ckol95hz8000uh0wtsevgrf1v" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpublishing/">webpublishing</a></li></ul>
@@ -1202,7 +1302,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="ckok0p60p0001ckwtl7zck9ok" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2021/04/20/NPM/" data-id="ckol95hy90001h0wth32pql2b" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NODE/">NODE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NPM/">NPM</a></li></ul>
@@ -1268,7 +1368,7 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="ckok0p6100007ckwt13800a53" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/16/FirstXDPlugin/" data-id="ckol95hye0003h0wtqypba1g7" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AdobeXD/">AdobeXD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Development/">Development</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Plugin/">Plugin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/개발/">개발</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/어도비XD/">어도비XD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/플러그인/">플러그인</a></li></ul>
@@ -1343,78 +1443,10 @@ cd npmtest
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="ckok0p61c000jckwtld5o07do" class="article-share-link">공유</a>
+      <a data-url="https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/" data-id="ckol95hym0009h0wt2cufghdv" class="article-share-link">공유</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NonFunctional/">NonFunctional</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PerformanceTest/">PerformanceTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/비기능테스트/">비기능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/성능테스트/">성능테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-SoftwareTest_.ExploratoryTesting" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/09/SoftwareTest_.ExploratoryTesting/" class="article-date">
-  <time datetime="2019-08-09T14:13:03.000Z" itemprop="datePublished">2019-08-09</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Software-Test/">Software Test</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/09/SoftwareTest_.ExploratoryTesting/">탐색적 테스트(Exploratory Test)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>이 포스트는 “지식 제로부터 배우는 소프트웨어 테스트”를 읽고 학습한 내용입니다.</p>
-<h1 id="탐색적-테스트"><a href="#탐색적-테스트" class="headerlink" title="탐색적 테스트"></a>탐색적 테스트</h1><p>지난 포스트에서 소개한 화이트 박스 테스트와 블랙 박스 테스트는 테스트 케이스 기반 테스트이다.<br>좀 더 쉽게 설명하면 테스트 케이스를 설계하고 테스트를 진행하는 형태의 테스트 방식이다.<br>이번에 소개하는 탐색적 테스트는 생각하며 테스트 하기 방식이다. </p>
-<p>지난 포스트에서 “똑똑하지 않은 테스트를 시간만 많이 들인다고 소프트웨어 품질이 올라가지는 않는다”고 이야기 하자마자 보다 똑똑하게 테스트 하는 방법에 대해서 소개를 하고 있다.</p>
-<h2 id="탐색적-테스트란"><a href="#탐색적-테스트란" class="headerlink" title="탐색적 테스트란?"></a>탐색적 테스트란?</h2><p>말 그대로 탐색 하면서 테스트를 진행하는 것이다. 반복하지만 생각하면서 테스트 하기 이다.<br>이 테스트 기법의 핵심은 소프트웨어의 특정 부분에 버그들이 집중되어 분포한다 라는 특성을 이용한 테스트 기법이다.</p>
-<p>탐색적 테스트는 1983년에  Cem Kaner 교수가 제안한 방법인데, 그는 저자의 스승이라고 한다.<br>그는 이렇게 말했다.<br>탐색적 테스트는 소프트웨어 테스트 이해와 테스트 설계와<br>테스트 실행을 동시에 수행하는 테스트이다.<br><img src="/img/SoftwareTest_Exploratory/compare.PNG" alt="테스트 케이스 기반 테스트 vs 탐색적 테스트"></p>
-<p>이 책에서는 테스트 케이스 실행으로 발견할 수 있는 버그는 전체의 50% 이하 일 것이라고 한다.<br>그럴 거라면 차라리 테스트 케이스를 일일이 사전에 작성하는 것보다는 생각하면서 소프트웨어를 테스트 하는 것이 낫다.</p>
-<h3 id="테스트-케이스-기반-테스트의-단점"><a href="#테스트-케이스-기반-테스트의-단점" class="headerlink" title="테스트 케이스 기반 테스트의 단점"></a>테스트 케이스 기반 테스트의 단점</h3><ol>
-<li><p>프로젝트 초기 단계에 테스트 케이스를 작성하려고 해도 대상이 되는 소프트웨어가 없으므로 어림짐작으로 케이스를 작성하는 경우가 많다. 최악의 경우 요구 사항을 나열 해 놓은 테스트 케이스가 작성된다. ( 우리 프로젝트의 경우 그런 경우가 많았다. )<br>요구사항이 명확치 않으므로 경계값 또한 모호하여 제대로 된 경계값 분석 조차 이루어지지 않는다.</p>
-</li>
-<li><p>너무 이른 테스트 케이스 작성은 소프트웨어 테스트 공수의 현저한 증가를 가져온다.</p>
-</li>
-<li><p>테스트 케이스 기반 테스트는 아래 두 가지가 결여되어 있다.<br> 가. 테스트를 실행하면서 어딘가 다른 부분에 문제가 없는지를 생각 해 보고 그 곳을 테스트 하는 것<br> 나. 소프트웨어에서 약한 부분을 발견 했다면 그곳의 집중적 테스트<br> 결과적으로 중요도나, 심각도, 버그 분포에 대한 고려가 없는 테스트이므로 비효율적이다.</p>
-</li>
-</ol>
-<h2 id="탐색적-테스트-수행-방법"><a href="#탐색적-테스트-수행-방법" class="headerlink" title="탐색적 테스트 수행 방법"></a>탐색적 테스트 수행 방법</h2><ol>
-<li><p>기준(Criteria)의 결정<br>탐색적 테스트 수행 전에 어떤 소프트웨어야 하는지에 관한 기준을 정해야 한다. 아래 표는 해당 예이다.<br><img src="/img/SoftwareTest_Exploratory/Criteria.PNG" alt="기준의 결정"></p>
-</li>
-<li><p>탐색적 테스트 수행<br>탐색적 테스트 수행은 아래의 다섯 가지 단계로 이루어진다.<br>가. 대상 소프트웨어를 정함.<br>나. 기능을 목록화 함.<br>다. 해당 기능들을 조사하여 약한 부분을 발견.<br>라. 각 기능을 테스트 하고 버그를 기록<br>마. 계속적인 테스트 실행</p>
-</li>
-</ol>
-<h3 id="탐색적-테스트의-단점"><a href="#탐색적-테스트의-단점" class="headerlink" title="탐색적 테스트의 단점"></a>탐색적 테스트의 단점</h3><p>비기능 요구 테스트에 어울리지 않는다. 예외가 있다면 사용성(Usability)테스트이다. </p>
-<p>테스트의 효율을 극대화 하기 위해서는..</p>
-<p>일반적인(기술적인 이해도나 깊이가 없는) 테스터가 탐색적 테스트를 수행 하였을 경우에는 코드 커버리지가 테스트 케이스 기반의 테스트나 별반 차이가 없다.<br><img src="/img/SoftwareTest_Exploratory/before.jpg" alt="이해도가 없을 경우"></p>
-<p>하지만 일반적인 테스터에게 개발자가 프로그램의 구조를 설명해 주고 테스트를 하면 아래와 같은 그래프가 나온다.<br><img src="/img/SoftwareTest_Exploratory/after.jpg" alt="이해도가 생긴 경우"></p>
-<p>따라서 탐색적 테스트 + 기술을 갖춘 테스트 담당자의 조합이라면 짧은 시간에 최대의 결과를 얻을 수 있다.</p>
-<h2 id="결론"><a href="#결론" class="headerlink" title="결론"></a>결론</h2><p>소프트웨어 설계 회의 시에 테스터를 참석 시키거나, 소프트웨어 설계가 완료 되었을 때 테스터에게 그 구조에 대해서 자세히 설명 해 준다면 탐색적 테스트를 수행하여 보다 나은 품질의 소프트웨어를 얻을 수 있다.또한 테스트의 스타일과 방법은 다양하다. 그 스타일과 방법을 적재적소에 적용할 수 있는가가 테스트의 성과를 좌우한다.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/" data-id="ckok0p60v0003ckwt17m03iht" class="article-share-link">공유</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ExploratoryTest/">ExploratoryTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SoftwareTest/">SoftwareTest</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Test/">Test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/소프트웨어테스트/">소프트웨어테스트</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/탐색적테스트/">탐색적테스트</a></li></ul>
 
     </footer>
   </div>
@@ -1438,7 +1470,7 @@ cd npmtest
   <div class="widget-wrap">
     <h3 class="widget-title">카테고리</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Adobe-XD-Plugin-Development/">Adobe XD Plugin Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Develop-Env/">Develop Env</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/My-Opinions/">My Opinions</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Test/">Software Test</a></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Adobe-XD-Plugin-Development/">Adobe XD Plugin Development</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/CSS/">CSS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Develop-Env/">Develop Env</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/My-Opinions/">My Opinions</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Software-Test/">Software Test</a></li></ul>
     </div>
   </div>
 
@@ -1449,6 +1481,10 @@ cd npmtest
     <h3 class="widget-title">최근 포스트</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/05/12/we_browser_exec/">웹 브라우저가 스크립트를 해석하는 과정 외 JS 학습 내용</a>
+          </li>
         
           <li>
             <a href="/2021/05/11/mediaquery/">반응형 관련 CSS 정리 (미디어쿼리)</a>
@@ -1464,10 +1500,6 @@ cd npmtest
         
           <li>
             <a href="/2021/05/04/css_boxmodel/">Summary of CSS Box Model Properties</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/04/html_tag/">자주 쓰는 HTML 태그 정리</a>
           </li>
         
       </ul>

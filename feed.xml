@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-11T12:47:15.646Z</updated>
+  <updated>2021-05-12T09:31:02.027Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>웹 브라우저가 스크립트를 해석하는 과정 외 JS 학습 내용</title>
+    <link href="https://slim8020.github.io/2021/05/12/we_browser_exec/"/>
+    <id>https://slim8020.github.io/2021/05/12/we_browser_exec/</id>
+    <published>2021-05-12T09:19:03.000Z</published>
+    <updated>2021-05-12T09:31:02.027Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="웹-브라우저가-스크립트를-해석하는-과정"><a href="#웹-브라우저가-스크립트를-해석하는-과정" class="headerlink" title="웹 브라우저가 스크립트를 해석하는 과정"></a>웹 브라우저가 스크립트를 해석하는 과정</h2><ol><li>&lt;!DOCTYPE html &gt; 을 보고 이 문서가 html 문서임을 인식하여 html 표준에 맞춰서 해석 시작</li><li>html 태그 사이의 순서와 포함관계 확인<ul><li>head 태그 사이에 어떤 태그가 있는가?</li><li>body 태그 사이에 어떤 태그가 있는가?</li><li>순서와 포함관계 확인.</li></ul></li><li>태그분석 후 스타일 정보 분석</li><li>script 태그를 만나면 웹브라우저 내부의 자바스크립트 해석기에 스크립트 소스를 넘김.<br>자바스크립트 해석기는 script 사이의 소스를 해석함.</li><li>분석된 태그와 스타일 정보를 기준으로 웹 브라우저에 화면 표시</li><li>자바 스크립트가 해석될 액션이 있으면 자바 스크립트를 실행</li></ol><h2 id="C-계열-언어와-다른-비교-연산자"><a href="#C-계열-언어와-다른-비교-연산자" class="headerlink" title="C 계열 언어와 다른 비교 연산자"></a>C 계열 언어와 다른 비교 연산자</h2><p>내가 배운 언어들과 다른 연산자. 기억 해 두자.</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>===</td><td>값과 자료형이 모두 같을 때</td></tr><tr><td>!==</td><td>값이나 자료형 둘중에 하나가 다를 떄</td></tr></tbody></table><h2 id="함수-선언과-실행-순서"><a href="#함수-선언과-실행-순서" class="headerlink" title="함수 선언과 실행 순서"></a>함수 선언과 실행 순서</h2><p>Javascript 는 선언과 호출에 순서 상관 없이 작성할 수 있음.</p><p>웹브라우저가 자바스크립트 소스 해석 시 함수 선언 부분을 먼저 하기 때문에<br>선언한 위치와 상관 없이 호출 할 수 있음.</p><p>선언을 먼저 하고 호출한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*호출*/</span><br><span class="line">a();</span><br></pre></td></tr></table></figure></p><p>호츌을 먼저 하고 선언을 한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*호출*/</span><br><span class="line">a();</span><br><span class="line"></span><br><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h2 id="변수의-적용-스코프"><a href="#변수의-적용-스코프" class="headerlink" title="변수의 적용 스코프"></a>변수의 적용 스코프</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>지역변수</td><td>해당 함수 안에서만 사용 가능. 함수 안에서 var 예약어로 선언 해야 함.</td></tr><tr><td>전역변수</td><td>적용 범위 없이 사용 가능. 함수 밖에서 선언 할 때는 var 사용. 함수 내에서 사용할 경우 var 예약어 없이 사용.</td></tr><tr><td>호이스팅</td><td>“끌어올린다” 라는 의미. 변수가 호출되고 나중에 선언하더라도 끌어올려서 선언 된 변수로 처리. <br> 함수 내에서 어디서든 선언할 수 있는 자유도가 생김.</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;웹-브라우저가-스크립트를-해석하는-과정&quot;&gt;&lt;a href=&quot;#웹-브라우저가-스크립트를-해석하는-과정&quot; class=&quot;headerlink&quot; title=&quot;웹 브라우저가 스크립트를 해석하는 과정&quot;&gt;&lt;/a&gt;웹 브라우저가 스크립트를 해석하는 과정&lt;/
+      
+    
+    </summary>
+    
+      <category term="Javascript" scheme="https://slim8020.github.io/categories/Javascript/"/>
+    
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+      <category term="javascript" scheme="https://slim8020.github.io/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>반응형 관련 CSS 정리 (미디어쿼리)</title>
     <link href="https://slim8020.github.io/2021/05/11/mediaquery/"/>
     <id>https://slim8020.github.io/2021/05/11/mediaquery/</id>
     <published>2021-05-11T12:32:03.000Z</published>
-    <updated>2021-05-11T12:47:15.646Z</updated>
+    <updated>2021-05-11T12:52:44.260Z</updated>
     
     <content type="html"><![CDATA[<h2 id="미디어-쿼리-속성"><a href="#미디어-쿼리-속성" class="headerlink" title="미디어 쿼리 속성"></a>미디어 쿼리 속성</h2><p>반응형 웹 디자인에서 가장 기본적인 개념.<br>사이트에 접속하는 장치에 따라 특정한 CSS 스타일을 적용.</p><ul><li>형태 : @media [only|not] 미디어 유형 [and 조건] * [and 조건]</li></ul><h2 id="미디어-유형"><a href="#미디어-유형" class="headerlink" title="미디어 유형"></a>미디어 유형</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>all</td><td>모든 미디어 유형</td></tr><tr><td>print</td><td>인쇄 장치</td></tr><tr><td>screen</td><td>PC 스크린 + 스마트폰 스크린</td></tr><tr><td>tv</td><td>음성과 영상이 동시에 출력되는 TV</td></tr><tr><td>aural</td><td>화면을 읽어 소리로 출력해 주는 장치</td></tr><tr><td>braille</td><td>점자 표시 장치</td></tr><tr><td>handled</td><td>패드</td></tr><tr><td>projection</td><td>프로젝터</td></tr><tr><td>tty</td><td>디스플레이 기능이 제한된 장치. 픽셀 단위를 사용할 수 없음</td></tr><tr><td>embossed</td><td>점자 프린터</td></tr></tbody></table><h2 id="조건"><a href="#조건" class="headerlink" title="조건"></a>조건</h2><h3 id="웹페이지의-너비와-높이"><a href="#웹페이지의-너비와-높이" class="headerlink" title="웹페이지의 너비와 높이"></a>웹페이지의 너비와 높이</h3><p>웹 문서 내용이 화면에 나타나는 영역을 뷰포트라고 하는데 뷰포트의 너비와 높이를 미디어 쿼리 조건으로 사용함.</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>width, height</td><td>뷰포트의 가로, 세로 길이</td></tr><tr><td>min-width, min-height</td><td>뷰포트의 최소 너비, 최소 높이</td></tr><tr><td>max-width, max-height</td><td>뷰포트의 최대 너비, 최대 높이</td></tr></tbody></table><h3 id="단말기의-너비와-높이"><a href="#단말기의-너비와-높이" class="headerlink" title="단말기의 너비와 높이"></a>단말기의 너비와 높이</h3><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>device-width, device-height</td><td>디바이스의 가로, 세로 길이</td></tr><tr><td>min-device-width, min-device-height</td><td>디바이스의 최소 너비, 최소 높이</td></tr><tr><td>max-device-width, max-device-height</td><td>디바이스의 최대 너비, 최대 높이</td></tr></tbody></table><p>예시)<br>@media all and (min-device-width: 360px) and (min-device-height: 640px){<br>}</p><h3 id="화면-회전"><a href="#화면-회전" class="headerlink" title="화면 회전"></a>화면 회전</h3><table><thead><tr><th>종류</th><th>설명</th><th>예시</th></tr></thead><tbody><tr><td>portrait</td><td>단말기의 세로 모드</td><td>orienntation: portrait</td></tr><tr><td>landscape</td><td>단말기의 가로 모드</td><td>orientation : landscape</td></tr></tbody></table><h2 id="모바일-퍼스트-mobile-first-기법"><a href="#모바일-퍼스트-mobile-first-기법" class="headerlink" title="모바일 퍼스트(mobile first) 기법"></a>모바일 퍼스트(mobile first) 기법</h2><ul><li>다른 기기에 비해 제약 조건이 많은 모바일의 레이아웃을 기본으로 스타일링</li></ul><h2 id="중단점"><a href="#중단점" class="headerlink" title="중단점"></a>중단점</h2><ul><li>기준이 되는 단말기에 따라 달라질 수 있음.</li><li>스마트폰의 경우 미디어 쿼리를 사용하지 않고, 기본 CSS 로 작성</li><li>태블릿의 경우 세로크기가 768px 이상, 가로크기 1024px 이상</li><li>데스크톱의 경우 1024px 이상</li></ul><h2 id="외부-CSS-파일-연결"><a href="#외부-CSS-파일-연결" class="headerlink" title="외부 CSS 파일 연결"></a>외부 CSS 파일 연결</h2><h3 id="link-를-이용할-때"><a href="#link-를-이용할-때" class="headerlink" title="link 를 이용할 때"></a>link 를 이용할 때</h3><p>&lt; link rel=”stylesheet” media= “미디어쿼리조건”    href=”css 파일경로” s&gt; </p><h3 id="import-를-이용할-때"><a href="#import-를-이용할-때" class="headerlink" title="import 를 이용할 때"></a>import 를 이용할 때</h3><p>@import url(“css/pc.css”) only screen and (min-width : 1024px)</p>]]></content>
     
