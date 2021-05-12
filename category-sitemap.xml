@@ -8,6 +8,20 @@
     </url>
 
     <url>
+        <loc>https://slim8020.github.io/categories/Writing/</loc>
+        <lastmod>2021-05-12T09:39:43.783Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/categories/Plugin-Development/</loc>
+        <lastmod>2021-05-12T09:35:55.173Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/categories/Javascript/</loc>
         <lastmod>2021-05-12T09:33:49.401Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -29,13 +43,6 @@
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/My-Opinions/</loc>
-        <lastmod>2021-05-04T07:39:30.211Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://slim8020.github.io/categories/Software-Test/</loc>
         <lastmod>2021-05-04T07:37:43.116Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -45,13 +52,6 @@
     <url>
         <loc>https://slim8020.github.io/categories/Develop-Env/</loc>
         <lastmod>2021-05-04T07:37:18.513Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/categories/Adobe-XD-Plugin-Development/</loc>
-        <lastmod>2021-05-04T07:36:06.658Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
