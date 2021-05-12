@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-12T09:31:02.027Z</updated>
+  <updated>2021-05-12T09:33:49.401Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>웹 브라우저가 스크립트를 해석하는 과정 외 JS 학습 내용</title>
-    <link href="https://slim8020.github.io/2021/05/12/we_browser_exec/"/>
-    <id>https://slim8020.github.io/2021/05/12/we_browser_exec/</id>
+    <link href="https://slim8020.github.io/2021/05/12/web_browser_exec/"/>
+    <id>https://slim8020.github.io/2021/05/12/web_browser_exec/</id>
     <published>2021-05-12T09:19:03.000Z</published>
-    <updated>2021-05-12T09:31:02.027Z</updated>
+    <updated>2021-05-12T09:33:49.401Z</updated>
     
     <content type="html"><![CDATA[<h2 id="웹-브라우저가-스크립트를-해석하는-과정"><a href="#웹-브라우저가-스크립트를-해석하는-과정" class="headerlink" title="웹 브라우저가 스크립트를 해석하는 과정"></a>웹 브라우저가 스크립트를 해석하는 과정</h2><ol><li>&lt;!DOCTYPE html &gt; 을 보고 이 문서가 html 문서임을 인식하여 html 표준에 맞춰서 해석 시작</li><li>html 태그 사이의 순서와 포함관계 확인<ul><li>head 태그 사이에 어떤 태그가 있는가?</li><li>body 태그 사이에 어떤 태그가 있는가?</li><li>순서와 포함관계 확인.</li></ul></li><li>태그분석 후 스타일 정보 분석</li><li>script 태그를 만나면 웹브라우저 내부의 자바스크립트 해석기에 스크립트 소스를 넘김.<br>자바스크립트 해석기는 script 사이의 소스를 해석함.</li><li>분석된 태그와 스타일 정보를 기준으로 웹 브라우저에 화면 표시</li><li>자바 스크립트가 해석될 액션이 있으면 자바 스크립트를 실행</li></ol><h2 id="C-계열-언어와-다른-비교-연산자"><a href="#C-계열-언어와-다른-비교-연산자" class="headerlink" title="C 계열 언어와 다른 비교 연산자"></a>C 계열 언어와 다른 비교 연산자</h2><p>내가 배운 언어들과 다른 연산자. 기억 해 두자.</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>===</td><td>값과 자료형이 모두 같을 때</td></tr><tr><td>!==</td><td>값이나 자료형 둘중에 하나가 다를 떄</td></tr></tbody></table><h2 id="함수-선언과-실행-순서"><a href="#함수-선언과-실행-순서" class="headerlink" title="함수 선언과 실행 순서"></a>함수 선언과 실행 순서</h2><p>Javascript 는 선언과 호출에 순서 상관 없이 작성할 수 있음.</p><p>웹브라우저가 자바스크립트 소스 해석 시 함수 선언 부분을 먼저 하기 때문에<br>선언한 위치와 상관 없이 호출 할 수 있음.</p><p>선언을 먼저 하고 호출한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*호출*/</span><br><span class="line">a();</span><br></pre></td></tr></table></figure></p><p>호츌을 먼저 하고 선언을 한 경우<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/*호출*/</span><br><span class="line">a();</span><br><span class="line"></span><br><span class="line">/*선언*/</span><br><span class="line">function a()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><h2 id="변수의-적용-스코프"><a href="#변수의-적용-스코프" class="headerlink" title="변수의 적용 스코프"></a>변수의 적용 스코프</h2><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>지역변수</td><td>해당 함수 안에서만 사용 가능. 함수 안에서 var 예약어로 선언 해야 함.</td></tr><tr><td>전역변수</td><td>적용 범위 없이 사용 가능. 함수 밖에서 선언 할 때는 var 사용. 함수 내에서 사용할 경우 var 예약어 없이 사용.</td></tr><tr><td>호이스팅</td><td>“끌어올린다” 라는 의미. 변수가 호출되고 나중에 선언하더라도 끌어올려서 선언 된 변수로 처리. <br> 함수 내에서 어디서든 선언할 수 있는 자유도가 생김.</td></tr></tbody></table>]]></content>
     
@@ -151,38 +151,6 @@
   </entry>
   
   <entry>
-    <title>Summary of CSS Box Model Properties</title>
-    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
-    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
-    <published>2021-05-04T06:32:03.000Z</published>
-    <updated>2021-05-10T13:48:57.078Z</updated>
-    
-    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>width</td><td>Specify the width of the box model</td><td>width: 100px</td></tr><tr><td>height</td><td>Specify the height of the box model</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>Specifies the criteria for calculating the size of the box model</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>Adding a shadow effect to the box model</td><td>box-shadow : width height area color</td></tr></tbody></table><h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>border-style</td><td>Designate border styles in 4 directions at once</td><td>border-style: solid</td></tr><tr><td>border-‘location’-style</td><td>Specify only the border style at the selected location</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>Specify the thickness of the borders in 4 directions at once</td><td>border-width: 10px</td></tr><tr><td>border-‘location’-width</td><td>Specify only the thickness of the border at the selected location</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td><td>border-color: #000</td></tr><tr><td>border-‘location’-color</td><td>Specify only the border color at the selected location</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>Round the vertices in four directions, top, bottom, left, and right</td><td>border-radius: 10px</td></tr><tr><td>border-‘location’-radius</td><td>Round only the vertices of the selected location</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>margin</td><td>Specify margins at once</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-‘location’</td><td>Specify the margin of the specified position (top, left, bottom, right)</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>Specify padding all at once</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-‘location’</td><td>Specify the padding of a fixed position (top, left, bottom, right)</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>display</td><td>Specify how to place elements on the screen (block, inline, inline-block, none)</td><td>display : block</td></tr><tr><td>float</td><td>Place web elements left or right.</td><td>float : left</td></tr><tr><td>clear</td><td>Turn off the float property</td><td>clear : both</td></tr></tbody></table><h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>Specifies how far up, down, left, and right between the anchor and the element</td><td>left:10px</td></tr><tr><td>position</td><td>Positioning of web elements (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.&lt;/p&gt;
-&lt;h2 id=
-      
-    
-    </summary>
-    
-      <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
-    
-    
-      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
-    
-      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
-    
-      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
-    
-      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>자주 쓰는 HTML 태그 정리</title>
     <link href="https://slim8020.github.io/2021/05/04/html_tag/"/>
     <id>https://slim8020.github.io/2021/05/04/html_tag/</id>
@@ -202,6 +170,38 @@
     </summary>
     
       <category term="HTML" scheme="https://slim8020.github.io/categories/HTML/"/>
+    
+    
+      <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="css" scheme="https://slim8020.github.io/tags/css/"/>
+    
+      <category term="html" scheme="https://slim8020.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Summary of CSS Box Model Properties</title>
+    <link href="https://slim8020.github.io/2021/05/04/css_boxmodel/"/>
+    <id>https://slim8020.github.io/2021/05/04/css_boxmodel/</id>
+    <published>2021-05-04T06:32:03.000Z</published>
+    <updated>2021-05-10T13:48:57.078Z</updated>
+    
+    <content type="html"><![CDATA[<p>You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.</p><h2 id="Box-Model-Properties"><a href="#Box-Model-Properties" class="headerlink" title="Box Model Properties"></a>Box Model Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>width</td><td>Specify the width of the box model</td><td>width: 100px</td></tr><tr><td>height</td><td>Specify the height of the box model</td><td>height: 100px</td></tr><tr><td>box-sizing</td><td>Specifies the criteria for calculating the size of the box model</td><td>box-sizing : border-box / box-sizing : content-box</td></tr><tr><td>box-shadow</td><td>Adding a shadow effect to the box model</td><td>box-shadow : width height area color</td></tr></tbody></table><h2 id="Border-Properties"><a href="#Border-Properties" class="headerlink" title="Border Properties"></a>Border Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>border-style</td><td>Designate border styles in 4 directions at once</td><td>border-style: solid</td></tr><tr><td>border-‘location’-style</td><td>Specify only the border style at the selected location</td><td>border-top-style: solid</td></tr><tr><td>border-width</td><td>Specify the thickness of the borders in 4 directions at once</td><td>border-width: 10px</td></tr><tr><td>border-‘location’-width</td><td>Specify only the thickness of the border at the selected location</td><td>border-top-width: 10px</td></tr><tr><td>border-color</td><td>Designate the color of the borders in 4 directions at the same time, up, down, left, and right</td><td>border-color: #000</td></tr><tr><td>border-‘location’-color</td><td>Specify only the border color at the selected location</td><td>border-top-color: #f00</td></tr><tr><td>border-radius</td><td>Round the vertices in four directions, top, bottom, left, and right</td><td>border-radius: 10px</td></tr><tr><td>border-‘location’-radius</td><td>Round only the vertices of the selected location</td><td>border-top=left-radius: 10px</td></tr></tbody></table><h2 id="Margin-Properties"><a href="#Margin-Properties" class="headerlink" title="Margin Properties"></a>Margin Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>margin</td><td>Specify margins at once</td><td>margin: 10px 10px 5px 5px</td></tr><tr><td>margin-‘location’</td><td>Specify the margin of the specified position (top, left, bottom, right)</td><td>margin-top: 10px</td></tr><tr><td>padding</td><td>Specify padding all at once</td><td>padding: 10px 10px 5px 5px</td></tr><tr><td>padding-‘location’</td><td>Specify the padding of a fixed position (top, left, bottom, right)</td><td>padding-top: 10px</td></tr></tbody></table><h2 id="Layout-Properties"><a href="#Layout-Properties" class="headerlink" title="Layout Properties"></a>Layout Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>display</td><td>Specify how to place elements on the screen (block, inline, inline-block, none)</td><td>display : block</td></tr><tr><td>float</td><td>Place web elements left or right.</td><td>float : left</td></tr><tr><td>clear</td><td>Turn off the float property</td><td>clear : both</td></tr></tbody></table><h2 id="Position-Properties"><a href="#Position-Properties" class="headerlink" title="Position Properties"></a>Position Properties</h2><table><thead><tr><th>Propeties</th><th>Explanation</th><th>Example</th></tr></thead><tbody><tr><td>left, right, top, bottom</td><td>Specifies how far up, down, left, and right between the anchor and the element</td><td>left:10px</td></tr><tr><td>position</td><td>Positioning of web elements (static, relative, absolute, fixed)</td><td>position: relative</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;You should be familiar with most of the properties, but keep them organized as they may not be remembered during development.&lt;/p&gt;
+&lt;h2 id=
+      
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://slim8020.github.io/categories/CSS/"/>
     
     
       <category term="publishing" scheme="https://slim8020.github.io/tags/publishing/"/>
