@@ -8,57 +8,36 @@
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/Diary/</loc>
-        <lastmod>2021-05-12T09:48:31.617Z</lastmod>
+        <loc>https://slim8020.github.io/categories/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%EA%B0%9C%EB%B0%9C/</loc>
+        <lastmod>2021-05-12T11:52:19.493Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/Essay/</loc>
-        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
+        <loc>https://slim8020.github.io/categories/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/</loc>
+        <lastmod>2021-05-12T11:48:46.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/Plugin-Development/</loc>
-        <lastmod>2021-05-12T09:35:55.173Z</lastmod>
+        <loc>https://slim8020.github.io/categories/%EC%9D%BC%EC%83%81/</loc>
+        <lastmod>2021-05-12T11:47:55.195Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/Javascript/</loc>
-        <lastmod>2021-05-12T09:33:49.401Z</lastmod>
+        <loc>https://slim8020.github.io/categories/%EC%97%90%EC%84%B8%EC%9D%B4/</loc>
+        <lastmod>2021-05-12T11:47:44.567Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/categories/CSS/</loc>
-        <lastmod>2021-05-11T12:52:44.260Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/categories/HTML/</loc>
-        <lastmod>2021-05-10T13:41:22.982Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/categories/Software-Test/</loc>
-        <lastmod>2021-05-04T07:37:43.116Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/categories/Develop-Env/</loc>
-        <lastmod>2021-05-04T07:37:18.513Z</lastmod>
+        <loc>https://slim8020.github.io/categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/</loc>
+        <lastmod>2021-05-12T11:46:31.998Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
