@@ -3,43 +3,57 @@
 
 
     <url>
-        <loc>https://slim8020.github.io/tags/html/</loc>
-        <lastmod>2021-05-12T09:39:43.783Z</lastmod>
+        <loc>https://slim8020.github.io/tags/Training/</loc>
+        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/css/</loc>
-        <lastmod>2021-05-12T09:39:43.783Z</lastmod>
+        <loc>https://slim8020.github.io/tags/CSS/</loc>
+        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/web/</loc>
-        <lastmod>2021-05-12T09:39:43.783Z</lastmod>
+        <loc>https://slim8020.github.io/tags/HTML/</loc>
+        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/publishing/</loc>
-        <lastmod>2021-05-12T09:39:43.783Z</lastmod>
+        <loc>https://slim8020.github.io/tags/Essay/</loc>
+        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/Writing/</loc>
-        <lastmod>2021-05-12T09:36:53.157Z</lastmod>
+        <loc>https://slim8020.github.io/tags/Webpublishing/</loc>
+        <lastmod>2021-05-12T09:43:23.859Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://slim8020.github.io/tags/webpublishing/</loc>
-        <lastmod>2021-05-12T09:36:53.157Z</lastmod>
+        <loc>https://slim8020.github.io/tags/question/</loc>
+        <lastmod>2021-05-12T09:42:00.047Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/essay/</loc>
+        <lastmod>2021-05-12T09:42:00.047Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/writing/</loc>
+        <lastmod>2021-05-12T09:42:00.047Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
@@ -94,6 +108,27 @@
     </url>
 
     <url>
+        <loc>https://slim8020.github.io/tags/html/</loc>
+        <lastmod>2021-05-12T09:33:49.401Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/css/</loc>
+        <lastmod>2021-05-12T09:33:49.401Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/web/</loc>
+        <lastmod>2021-05-12T09:33:49.401Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/tags/grid/</loc>
         <lastmod>2021-05-11T12:52:44.260Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -109,6 +144,13 @@
 
     <url>
         <loc>https://slim8020.github.io/tags/mediaquery/</loc>
+        <lastmod>2021-05-11T12:52:44.260Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/publishing/</loc>
         <lastmod>2021-05-11T12:52:44.260Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
