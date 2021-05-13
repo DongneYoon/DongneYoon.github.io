@@ -8,48 +8,16 @@
     </url>
 
     <url>
+        <loc>https://slim8020.github.io/2021/05/13/github_permission/</loc>
+        <lastmod>2021-05-13T01:58:23.367Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/2021/05/12/web_browser_exec/</loc>
-        <lastmod>2021-05-13T01:38:32.570Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/</loc>
-        <lastmod>2021-05-13T01:38:28.735Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2019/08/07/SoftwareTest_TestCase/</loc>
-        <lastmod>2021-05-13T01:38:24.871Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/</loc>
-        <lastmod>2021-05-13T01:38:21.073Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/</loc>
-        <lastmod>2021-05-13T01:38:15.790Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/04/20/NPM/</loc>
-        <lastmod>2021-05-13T01:38:12.194Z</lastmod>
+        <lastmod>2021-05-13T01:51:56.241Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -57,7 +25,7 @@
 
     <url>
         <loc>https://slim8020.github.io/2021/05/11/mediaquery/</loc>
-        <lastmod>2021-05-13T01:38:08.207Z</lastmod>
+        <lastmod>2021-05-13T01:51:56.240Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -65,7 +33,7 @@
 
     <url>
         <loc>https://slim8020.github.io/2021/05/10/input_form/</loc>
-        <lastmod>2021-05-13T01:38:04.714Z</lastmod>
+        <lastmod>2021-05-13T01:51:56.239Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -73,55 +41,7 @@
 
     <url>
         <loc>https://slim8020.github.io/2021/05/04/html_tag/</loc>
-        <lastmod>2021-05-13T01:38:00.996Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2019/08/16/FirstXDPlugin/</loc>
-        <lastmod>2021-05-13T01:37:56.672Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/05/10/css_transition/</loc>
-        <lastmod>2021-05-13T01:37:47.789Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/05/04/css_boxmodel/</loc>
-        <lastmod>2021-05-13T01:37:43.599Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/04/23/Essay_webpubl/</loc>
-        <lastmod>2021-05-13T01:37:39.199Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/05/12/Essay_Question/</loc>
-        <lastmod>2021-05-13T01:37:35.040Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/2021/05/12/diary_0512/</loc>
-        <lastmod>2021-05-13T01:37:28.923Z</lastmod>
+        <lastmod>2021-05-13T01:51:56.238Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -129,7 +49,95 @@
 
     <url>
         <loc>https://slim8020.github.io/2021/05/13/diary_0513/</loc>
-        <lastmod>2021-05-13T01:35:54.334Z</lastmod>
+        <lastmod>2021-05-13T01:51:56.237Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/05/10/css_transition/</loc>
+        <lastmod>2021-05-13T01:51:56.236Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/05/04/css_boxmodel/</loc>
+        <lastmod>2021-05-13T01:51:56.235Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2019/08/10/SoftwareTest_nonFunctional/</loc>
+        <lastmod>2021-05-13T01:51:56.234Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2019/08/08/SoftwareTest_WhiteBox_BlackBox/</loc>
+        <lastmod>2021-05-13T01:51:56.233Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2019/08/07/SoftwareTest_TestCase/</loc>
+        <lastmod>2021-05-13T01:51:56.232Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2019/08/09/SoftwareTest_.ExploratoryTesting/</loc>
+        <lastmod>2021-05-13T01:51:56.231Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/04/20/NPM/</loc>
+        <lastmod>2021-05-13T01:51:56.230Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2019/08/16/FirstXDPlugin/</loc>
+        <lastmod>2021-05-13T01:51:56.229Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/04/23/Essay_webpubl/</loc>
+        <lastmod>2021-05-13T01:51:56.228Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/05/12/Essay_Question/</loc>
+        <lastmod>2021-05-13T01:51:56.227Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/2021/05/12/Diary_0512/</loc>
+        <lastmod>2021-05-13T01:51:56.226Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
