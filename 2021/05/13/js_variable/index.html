@@ -21,7 +21,7 @@
 <meta property="og:description" content="Javascript 변수의 특이사항var 의 문제점 var 예약어를 빠뜨리면 전역변수가 된다. 중간에 변수를 재선언 해버리거나, 재할당 해버려서 값을 예측하기 하기 어렵다. &amp;gt; 버그 발생  let 과 constvar : 함수 레벨의 스코프let, const : 블록 레벨({…})의 스코프 let 도 마찬가지로 예약어를 쓰지 않으면 전역변수재할당은 가">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://slim8020.github.io/img/Thumbnail/variable_function.png">
-<meta property="og:updated_time" content="2021-05-13T08:06:56.086Z">
+<meta property="og:updated_time" content="2021-05-13T08:10:18.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="자바스크립트의 변수 및 함수 특이사항">
 <meta name="twitter:description" content="Javascript 변수의 특이사항var 의 문제점 var 예약어를 빠뜨리면 전역변수가 된다. 중간에 변수를 재선언 해버리거나, 재할당 해버려서 값을 예측하기 하기 어렵다. &amp;gt; 버그 발생  let 과 constvar : 함수 레벨의 스코프let, const : 블록 레벨({…})의 스코프 let 도 마찬가지로 예약어를 쓰지 않으면 전역변수재할당은 가">
@@ -184,7 +184,7 @@ ga('send', 'pageview');
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
   <a href="/2021/05/13/js_variable/" class="article-date">
-     <time datetime="2021-05-13T08:06:56.086Z" itemprop="dateModified">2021-05-13</time>
+     <time datetime="2021-05-13T08:10:18.087Z" itemprop="dateModified">2021-05-13</time>
   </a>
 </div>
 
@@ -225,7 +225,7 @@ ga('send', 'pageview');
 <li>for 문 안에서 카운터로 사용되는 변수의 경우 var 를 사용하지 말것.</li>
 <li>ES6 의 경우 let 를 사용할 것.</li>
 </ol>
-<h3 id="익명함수-Anonymous-function"><a href="#익명함수-Anonymous-function" class="headerlink" title="익명함수 (Anonymous function)"></a>익명함수 (Anonymous function)</h3><p>익명함수는 예전 C++에서는 보지 못했었고(한 5년전쯤인데.. 요새는 많이 사용하나?), C#에서는 있었는데 Javascript 에도 익명함수 개념이 있다. (반대로 전파된건가?)</p>
+<h3 id="익명함수-Anonymous-function"><a href="#익명함수-Anonymous-function" class="headerlink" title="익명함수 (Anonymous function)"></a>익명함수 (Anonymous function)</h3><p>익명함수는 예전 C++에서는 보지 못했었고(한 5년전쯤인데.. 요새는 많이 사용하나?), C#에서는 있었는데 Javascript 에도 익명함수 개념이 있다. (반대로 전파된건가?)<br>함수명을 사용하지 않고 선언한 변수명으로 사용. </p>
 <h3 id="즉시실행함수-Immediately-invoked-function-expression"><a href="#즉시실행함수-Immediately-invoked-function-expression" class="headerlink" title="즉시실행함수 (Immediately-invoked function expression)"></a>즉시실행함수 (Immediately-invoked function expression)</h3><p>일반적으로 함수를 선언하고 정의 한 후, 호출하여 사용하는 반면<br>함수를 정의 하면서 동시에 실행하는 함수.</p>
 <h3 id="화살표함수-Arrow-function-expression-Lambda"><a href="#화살표함수-Arrow-function-expression-Lambda" class="headerlink" title="화살표함수 (Arrow function expression = Lambda)"></a>화살표함수 (Arrow function expression = Lambda)</h3><p>ES6 부터 =&gt;표기법 (화살표 표기법) 사용 가능.<br>화살표 함수를 사용하면 간략하게 표현 가능.</p>
 <p>일반 함수<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let hi=&quot;&quot;;</span><br><span class="line">function abc()&#123;</span><br><span class="line">     return &quot;hello!&quot;;</span><br><span class="line">&#125;</span><br><span class="line">hi = abc();</span><br><span class="line">document.write(hi);</span><br></pre></td></tr></table></figure></p>
@@ -242,7 +242,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://slim8020.github.io/2021/05/13/js_variable/" data-id="ckoml3eb50012fowt2ruudrq8" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://slim8020.github.io/2021/05/13/js_variable/" data-id="ckomm3gqc0016ccwtt4jezjp3" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -327,7 +327,7 @@ var 예약어를 빠뜨리면 전역변수가 된다.
 
 let 과 constvar : 함수 레벨의 스코프let, const : 블록 레벨({…})의 스코프
 let 도 마찬가지로 예약어를 쓰지 않으면 전역변수재할당은 가",
-        "wordCount": 362
+        "wordCount": 368
     }
 </script>
 
