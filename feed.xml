@@ -6,7 +6,7 @@
   <link href="/feed.xml" rel="self"/>
   
   <link href="https://slim8020.github.io/"/>
-  <updated>2021-05-13T08:10:18.087Z</updated>
+  <updated>2021-05-14T05:10:10.952Z</updated>
   <id>https://slim8020.github.io/</id>
   
   <author>
@@ -15,6 +15,111 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>이벤트와 이벤트 핸들러 정리</title>
+    <link href="https://slim8020.github.io/2021/05/14/event/"/>
+    <id>https://slim8020.github.io/2021/05/14/event/</id>
+    <published>2021-05-14T04:42:03.000Z</published>
+    <updated>2021-05-14T05:10:10.952Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/Thumbnail/event.png" alt=""></p><p>웹 상에서 발생하는 이벤트들을 정리 해 본다. </p><h2 id="마우스-이벤트"><a href="#마우스-이벤트" class="headerlink" title="마우스 이벤트"></a>마우스 이벤트</h2><p>마우스 조작 시 발생하는 이벤트</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>click</td><td>html 요소를 클릭할 때 이벤트 발생</td></tr><tr><td>dbclick</td><td>html 요소를 더블 클릭할 때 이벤트 발생</td></tr><tr><td>mousedown</td><td>마우스 버튼을 눌렀을 때 이벤트 발생</td></tr><tr><td>mousemove</td><td>마우스 포인터를 움직였을 때 이벤트 발생</td></tr><tr><td>mouseover</td><td>마우스 포인터가 요소 위로 옮겨질 때 이벤트 발생</td></tr><tr><td>mouseout</td><td>마우스 포인터가 요소에서 벗어났을 때 이벤트 발생</td></tr><tr><td>mouseup</td><td>마우스 버튼을 눌렀다가 떼었을 때 이벤트 발생</td></tr></tbody></table><h2 id="키보드-이벤트"><a href="#키보드-이벤트" class="headerlink" title="키보드 이벤트"></a>키보드 이벤트</h2><p>키보드에서 특정키를 조작할 때 발생하는 이벤트</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>keydown</td><td>키보드 키를 누르는 동안 이벤트 발생</td></tr><tr><td>keypress</td><td>키보드 키를 눌렀을 때 이벤트 발생</td></tr><tr><td>keyup</td><td>키보드 키를 눌렀다가 뗄 때 이벤트 발생</td></tr></tbody></table><h2 id="문서로딩-이벤트"><a href="#문서로딩-이벤트" class="headerlink" title="문서로딩 이벤트"></a>문서로딩 이벤트</h2><p>서버에서 웹 문서를 가져오거나 조작하였을 때 발생하는 이벤트</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>abort</td><td>문서가 모두 로딩되기 전 로딩을 멈췄을 때 발생</td></tr><tr><td>error</td><td>문서가 정확히 로딩이 되지 않았을 때 발생</td></tr><tr><td>load</td><td>문서 로딩이 끝나면 발생</td></tr><tr><td>resize</td><td>문서 화면의 크기가 바뀌었을 때 이벤트 발생</td></tr><tr><td>scroll</td><td>문서가 스크롤 될때 이벤트 발생</td></tr><tr><td>unload</td><td>문서에서 벗어날때 이벤트 발생</td></tr></tbody></table><h2 id="폼-이벤트"><a href="#폼-이벤트" class="headerlink" title="폼 이벤트"></a>폼 이벤트</h2><p>폼 요소에 입력이 생기거나 변경이 생겼을 때 발생하는 이벤트</p><table><thead><tr><th>종류</th><th>설명</th></tr></thead><tbody><tr><td>blur</td><td>폼 요소에서 포커스를 잃었을 때 이벤트 발생</td></tr><tr><td>change</td><td>목록이나 체크 상태 등이 변경 되면 발생</td></tr><tr><td>focus</td><td>요소에 포커스가 놓였을 때 이벤트 발생</td></tr><tr><td>reset</td><td>폼이 리셋 되었을 때 발생</td></tr><tr><td>submit</td><td>submit 버튼을 클릭 했을 때 발생</td></tr></tbody></table><h2 id="이벤트-핸들러-이벤트-처리기"><a href="#이벤트-핸들러-이벤트-처리기" class="headerlink" title="이벤트 핸들러 (이벤트 처리기)"></a>이벤트 핸들러 (이벤트 처리기)</h2><p>이벤트가 발생하면 실행 하는 동작 정의</p><ol><li><p>직접 연결 하기<br>HTML 에서 직접 연결 하는 방식<br>예)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;#&quot; onclick=&quot;alert(&apos;click!&apos;)&quot;&gt; click me! &lt;/a&gt;</span><br></pre></td></tr></table></figure></li><li><p>DOM 으로 연결 하기<br>자바스크립트에서 선택자를 통해 언어온 값에 이벤트 연결 하기<br>예)</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a = document.querySelector(&quot;#test&quot;);</span><br><span class="line">a.onclick = changeValue;</span><br><span class="line"></span><br><span class="line">function changeValue()&#123;</span><br><span class="line">    document.querySelector(&quot;p&quot;).style.color = &quot;#fff&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/img/Thumbnail/event.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;웹 상에서 발생하는 이벤트들을 정리 해 본다. &lt;/p&gt;
+&lt;h2 id=&quot;마우스-이벤트&quot;&gt;&lt;a href=&quot;#마우스-이벤트&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="프론트엔드" scheme="https://slim8020.github.io/categories/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/"/>
+    
+    
+      <category term="web" scheme="https://slim8020.github.io/tags/web/"/>
+    
+      <category term="javascript" scheme="https://slim8020.github.io/tags/javascript/"/>
+    
+      <category term="frontend" scheme="https://slim8020.github.io/tags/frontend/"/>
+    
+      <category term="이벤트" scheme="https://slim8020.github.io/tags/%EC%9D%B4%EB%B2%A4%ED%8A%B8/"/>
+    
+      <category term="event" scheme="https://slim8020.github.io/tags/event/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>설명하는 글쓰는 방법</title>
+    <link href="https://slim8020.github.io/2021/05/14/explain/"/>
+    <id>https://slim8020.github.io/2021/05/14/explain/</id>
+    <published>2021-05-14T04:37:03.000Z</published>
+    <updated>2021-05-14T04:44:37.471Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/Thumbnail/explain.png" alt=""></p><h1 id="설명하는-글을-쓰는-방법"><a href="#설명하는-글을-쓰는-방법" class="headerlink" title="설명하는 글을 쓰는 방법"></a>설명하는 글을 쓰는 방법</h1><h2 id="요령"><a href="#요령" class="headerlink" title="요령"></a>요령</h2><ol><li>처음, 가운데, 끝 세부분으로 나누어 쓴다.</li><li>무엇에 대하여, 누구에게 쓸 것인가를 정한다.</li><li>설명하고자 하는 내용을 분명하게 나타낼 수 있도록 문장을 간결하게 쓴다.</li><li>알기 쉬운 말로 쓴다.</li><li>자기 주장이나 느낌이 들어가면 안되고 사살민을 쓴다.</li><li>설명할 대상에 대하여 기준을 정하고 몇가지로 나누거나 순서를 정하여 쓴다.</li></ol><h2 id="짜임"><a href="#짜임" class="headerlink" title="짜임"></a>짜임</h2><ol><li>처음 : 무엇에 대하여 누구를 대상으로 어떻게 설명하겠다는 것을 밝힌다. (설명 대상, 동기, 목적 제시)</li><li>가운데 : 설명하고자 하는 대상에 대하여 기준을 정하고, 몇가지로 나누어 그 특징을 알기 쉽게 쓴다. (설명 대상에 대한 구체적인 설명)</li><li>끝 : 설명한 내용을 간단하게 정리하면서 글쓴이의 의견도 쓴다. (내용 요약, 정리, 평가)</li></ol><h2 id="설명하는-방식"><a href="#설명하는-방식" class="headerlink" title="설명하는 방식"></a>설명하는 방식</h2><ol><li>정의 : 어떤 말이나 사물의 뜻을 명백히 밝히는 것</li><li>예시 : 구체적인 예를 들어 설명하는 것</li><li>비교 : 어떤 대상을 다른 것과의 공통점을 들어 설명하는 것</li><li>대조 : 어떤 대상을 다른 것과의 차이점을 들어 설명하는 것</li><li>분류 : 대상을 일정한 기준에 따라 부분별로 나누거나 공통성을 가진 대상들을 하나의 종류 속에 묶어서 설명하는 것</li><li>분석 : 하나의 대상을 부분으로 나누어 설명하는 방법</li><li>인과 : 원인과 결과를 관련지어 설명하는 것</li></ol><p>출처)<br><a href="https://m.blog.naver.com/PostView.nhn?blogId=lmajo2000&amp;logNo=220528736126&amp;proxyReferer=https:%2F%2Fwww.google.com%2F" target="_blank" rel="noopener">https://m.blog.naver.com/PostView.nhn?blogId=lmajo2000&amp;logNo=220528736126&amp;proxyReferer=https:%2F%2Fwww.google.com%2F</a><br><a href="https://m.blog.naver.com/2620950/221101311763" target="_blank" rel="noopener">https://m.blog.naver.com/2620950/221101311763</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/img/Thumbnail/explain.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;설명하는-글을-쓰는-방법&quot;&gt;&lt;a href=&quot;#설명하는-글을-쓰는-방법&quot; class=&quot;headerlink&quot; title=&quot;설명하는 글을 쓰는 방법
+      
+    
+    </summary>
+    
+      <category term="에세이" scheme="https://slim8020.github.io/categories/%EC%97%90%EC%84%B8%EC%9D%B4/"/>
+    
+    
+      <category term="writing" scheme="https://slim8020.github.io/tags/writing/"/>
+    
+      <category term="essay" scheme="https://slim8020.github.io/tags/essay/"/>
+    
+      <category term="explain" scheme="https://slim8020.github.io/tags/explain/"/>
+    
+      <category term="설명하기" scheme="https://slim8020.github.io/tags/%EC%84%A4%EB%AA%85%ED%95%98%EA%B8%B0/"/>
+    
+      <category term="설명하는글쓰는방법" scheme="https://slim8020.github.io/tags/%EC%84%A4%EB%AA%85%ED%95%98%EB%8A%94%EA%B8%80%EC%93%B0%EB%8A%94%EB%B0%A9%EB%B2%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5월 14일</title>
+    <link href="https://slim8020.github.io/2021/05/14/diary_0514/"/>
+    <id>https://slim8020.github.io/2021/05/14/diary_0514/</id>
+    <published>2021-05-14T04:24:03.000Z</published>
+    <updated>2021-05-14T04:37:14.202Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/img/Thumbnail/diary_0514.png" alt=""></p><h2 id="절약을-잘-했는가-낭비한-것은-없는가"><a href="#절약을-잘-했는가-낭비한-것은-없는가" class="headerlink" title="절약을 잘 했는가? 낭비한 것은 없는가?"></a>절약을 잘 했는가? 낭비한 것은 없는가?</h2><p>어제는 하루종일 열심히 블로그를 쓰고, 주식도 하고, 자바스크립트 리뷰를 해서 나를 위한 선물로 혼술을 하였다.<br>메뉴는 회와 소주였다. 고생한 나를 위한 선물이긴 하지만 배달음식은 언제나 아깝다. 25000원 정도 들었는데,<br>밖에서 누군가를 만나서 술 한잔 하면 그정도 나온다. 그렇다고 더 맛있거나 더 많이 먹는 것도 아니다.<br>나를 위한 선물로 혼술 보다는 누군가를 만나는 걸로 하는게 좋을 것 같다. </p><h2 id="게으르지는-않았는가-근면성실"><a href="#게으르지는-않았는가-근면성실" class="headerlink" title="게으르지는 않았는가? (근면성실)"></a>게으르지는 않았는가? (근면성실)</h2><p>요새 게으른 적이 한번도 없는 것 같다. 하루종일 컴퓨터 앞에 앉아서 글을 쓰거나 회사를 분석하거나<br>웹 개발 공부를 하니 말이다. 심지어 이번주에는 웹툰 조차 보지 않았다. 자기 전에 게임 한두판 하는게 전부다.<br>회사 일하는 것 이외에 나를 위한 일을 이렇게 열심히 해본게 얼마만이던가..</p><h2 id="건강한-삶을-위해-어떤-노력을-하였는가-청소-요리-금주-운동"><a href="#건강한-삶을-위해-어떤-노력을-하였는가-청소-요리-금주-운동" class="headerlink" title="건강한 삶을 위해 어떤 노력을 하였는가? (청소, 요리, 금주, 운동)"></a>건강한 삶을 위해 어떤 노력을 하였는가? (청소, 요리, 금주, 운동)</h2><p>요새 운동도 안하는데, 오히려 아픈데가 없다. 항상 등이 아프거나 컨디션이 안 좋았는데..<br>술을 안 마셔서 그런 것일까? 어제는 한잔 하긴 했지만 적당히 마시고 자서 컨디션은 좋다.<br>다만 날이 덥고 모기도 생기고 해서 수면에 방해가 좀 되는 것 같다.<br>어제는 김치 볶음을 하려고 하다가 대신 배추 된장찌개를 끓였다. 오늘 점심을 끝으로 다 먹어서<br>김치 볶음을 좀 해야 겠다. (아.. 저녁 때 떡볶이 하려고 했는데..)</p><h2 id="즐겁게-살고-있는가-시간을-보람되게-보냈는가-사람들과-좋은-관계를-맺고-있는가-원하는-일을-하고-있는가"><a href="#즐겁게-살고-있는가-시간을-보람되게-보냈는가-사람들과-좋은-관계를-맺고-있는가-원하는-일을-하고-있는가" class="headerlink" title="즐겁게 살고 있는가? ( 시간을 보람되게 보냈는가? 사람들과 좋은 관계를 맺고 있는가? 원하는 일을 하고 있는가?)"></a>즐겁게 살고 있는가? ( 시간을 보람되게 보냈는가? 사람들과 좋은 관계를 맺고 있는가? 원하는 일을 하고 있는가?)</h2><p>어제 네이버 블로그 하루 방문자 200명을 돌파했다. 6월초까지만 이 추세로 가면 네이버 애드포스트를 달 수가 있다.<br>네이버 블로거 중 존경스러운 사람이 있는데, 그 사람도 개발자 인듯 했다. 블로그 주제는 경제, 주식에 대한 것이다.<br>글의 내용을 보면 쉽게 이해가 된다. 글을 잘 쓰는 것 같다. 하루 방문자는 2만명에서 5만명정도 까지 되는 것 같았다.<br>근데 수익을 보니 100만원이 안되는 것 같았다. 블로그 주제에 대해서 약간 고민이 많은데, 효율에 대한 부분 때문이다.<br>아무리 내가 좋은 글을 써도 주제 자체가 사람들이 관심을 갖지 않는 것이라고 한다면 유입률은 떨어질 수 밖에 없을 것이기 때문이다.<br>근데 내가 왜 블로그를 시작 했더라? 유입자 모으기 인가?</p><h2 id="성장을-위해-어떤-노력을-하였는가-기록-정리-복기-습관화"><a href="#성장을-위해-어떤-노력을-하였는가-기록-정리-복기-습관화" class="headerlink" title="성장을 위해 어떤 노력을 하였는가? (기록, 정리, 복기, 습관화)"></a>성장을 위해 어떤 노력을 하였는가? (기록, 정리, 복기, 습관화)</h2><p>오늘은 앱을 하나 리뷰 하였다. 사진이 많아서 글이 좀 길어 보이지만, 그렇게 자세하게 글을 쓰지는 못헀다.<br>뭔가를 분석하고 설명하는 글을 잘 쓰고 싶은데, 방법을 잘 모르겠어서 어제 검색을 했다.<br>초등학교 고학년이나 중학교 저학년때 국어시간에 배우는 내용중에 설명하는 글쓰기가 있었다.<br>내가 잊고 살았구나 너무 오래전에 배운 것이라..<br>설명하는 글쓰기에 대해서 정리를 한번 해보고 자주 써보도록 노력 해 봐야 겠다.</p><p>개선포인트 : 설명하는 글쓰는 방법을 조사하고, 연습 하기</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/img/Thumbnail/diary_0514.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;절약을-잘-했는가-낭비한-것은-없는가&quot;&gt;&lt;a href=&quot;#절약을-잘-했는가-낭비한-것은-없는가&quot; class=&quot;headerlink&quot; tit
+      
+    
+    </summary>
+    
+      <category term="일상" scheme="https://slim8020.github.io/categories/%EC%9D%BC%EC%83%81/"/>
+    
+    
+      <category term="Saving" scheme="https://slim8020.github.io/tags/Saving/"/>
+    
+      <category term="Diligence" scheme="https://slim8020.github.io/tags/Diligence/"/>
+    
+      <category term="health" scheme="https://slim8020.github.io/tags/health/"/>
+    
+      <category term="Joy" scheme="https://slim8020.github.io/tags/Joy/"/>
+    
+      <category term="Growth" scheme="https://slim8020.github.io/tags/Growth/"/>
+    
+      <category term="Diary" scheme="https://slim8020.github.io/tags/Diary/"/>
+    
+  </entry>
   
   <entry>
     <title>자바스크립트의 변수 및 함수 특이사항</title>
@@ -527,9 +632,9 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="NonFunctional" scheme="https://slim8020.github.io/tags/NonFunctional/"/>
     
@@ -566,13 +671,13 @@
     
       <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
     
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
       <category term="Test" scheme="https://slim8020.github.io/tags/Test/"/>
     
       <category term="ExploratoryTest" scheme="https://slim8020.github.io/tags/ExploratoryTest/"/>
     
       <category term="탐색적테스트" scheme="https://slim8020.github.io/tags/%ED%83%90%EC%83%89%EC%A0%81%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
@@ -598,17 +703,17 @@
       <category term="소프트웨어테스트" scheme="https://slim8020.github.io/categories/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
     
+      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
+    
+      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
+    
       <category term="WhiteBox" scheme="https://slim8020.github.io/tags/WhiteBox/"/>
     
       <category term="BlackBox" scheme="https://slim8020.github.io/tags/BlackBox/"/>
     
-      <category term="SoftwareTest" scheme="https://slim8020.github.io/tags/SoftwareTest/"/>
-    
       <category term="화이트박스테스트" scheme="https://slim8020.github.io/tags/%ED%99%94%EC%9D%B4%ED%8A%B8%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
       <category term="블랙박스테스트" scheme="https://slim8020.github.io/tags/%EB%B8%94%EB%9E%99%EB%B0%95%EC%8A%A4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
-    
-      <category term="소프트웨어테스트" scheme="https://slim8020.github.io/tags/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8/"/>
     
   </entry>
   
