@@ -3,6 +3,27 @@
 
 
     <url>
+        <loc>https://slim8020.github.io/tags/Movie/</loc>
+        <lastmod>2021-05-17T03:00:51.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/Limitless/</loc>
+        <lastmod>2021-05-17T03:00:51.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://slim8020.github.io/tags/Essay/</loc>
+        <lastmod>2021-05-17T03:00:51.412Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>https://slim8020.github.io/tags/event/</loc>
         <lastmod>2021-05-14T05:10:10.952Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -396,13 +417,6 @@
 
     <url>
         <loc>https://slim8020.github.io/tags/HTML/</loc>
-        <lastmod>2021-05-13T01:51:56.228Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://slim8020.github.io/tags/Essay/</loc>
         <lastmod>2021-05-13T01:51:56.228Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
